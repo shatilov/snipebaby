@@ -4,7 +4,7 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.plugin.plugin');
 
 // from https://github.com/rivetweb/assets
-require_once JPATH_ROOT . '/app/lib/assets/init.php';
+//require_once JPATH_ROOT . '/app/lib/assets/init.php';
 
 class plgSystemAssets extends JPlugin {
 
@@ -19,15 +19,15 @@ class plgSystemAssets extends JPlugin {
 			return;
 		}
 
-		$filter = new AssetsBuilderFilter();
-		$filter2 = new HideExternalsFilter(array(
-			'hide_link' => 'hideexternals_hideLink'
-		));
-		JResponse::setBody(
-				$filter2->process(
-						$filter->process(JResponse::getBody()
-						)
-		));
+//		$filter = new AssetsBuilderFilter();
+//		$filter2 = new HideExternalsFilter(array(
+//			'hide_link' => 'hideexternals_hideLink'
+//		));
+//		JResponse::setBody(
+//				$filter2->process(
+//						$filter->process(JResponse::getBody()
+//						)
+//		));
 	}
 
 }

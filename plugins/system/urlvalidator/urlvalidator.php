@@ -13,7 +13,7 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.plugin.plugin');
 
 // from https://github.com/rivetweb/urlvalidator
-require_once JPATH_ROOT . '/app/lib/urlvalidator/init.php';
+//require_once JPATH_ROOT . '/app/lib/urlvalidator/init.php';
 
 class plgSystemUrlvalidator extends JPlugin {
 
@@ -85,26 +85,26 @@ class plgSystemUrlvalidator extends JPlugin {
 			return;
 		}
 
-		validate_urls(array(
-			'error_callback' => array($this, 'error404'),
-			'validate_callback' => array($this, 'validate'),
-			'ignored' => array(
-				'/index.php?option=com_foxcontact',
-				'/index.php?option=com_xmap',
-				'/index.php?option=com_custom',
-				//'/index.php?option=com_aicontactsafe',
-				'/index.php?option=com_users',
-				'/component/search'
-			),
-			'error404' => array(
-				'/index.php',
-				'/home',
-			),
-			'extensions' => array(
-			//'.html', '.feed'
-			),
-			'check_slash' => false
-		));
+//		validate_urls(array(
+//			'error_callback' => array($this, 'error404'),
+//			'validate_callback' => array($this, 'validate'),
+//			'ignored' => array(
+//				'/index.php?option=com_foxcontact',
+//				'/index.php?option=com_xmap',
+//				'/index.php?option=com_custom',
+//				//'/index.php?option=com_aicontactsafe',
+//				'/index.php?option=com_users',
+//				'/component/search'
+//			),
+//			'error404' => array(
+//				'/index.php',
+//				'/home',
+//			),
+//			'extensions' => array(
+//			//'.html', '.feed'
+//			),
+//			'check_slash' => false
+//		));
 	}
 
 	function onAfterDispatch() {

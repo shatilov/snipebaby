@@ -30,3 +30,4 @@
 </div>
 <?php include(dirname(__FILE__)."/products.php");?>
 </div>
+plugins/system/assets/assets.php
