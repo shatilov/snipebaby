@@ -1,0 +1,171 @@
+VirtueMart Importer Addon for JoomShopping CHANGELOG
+
+v1.5 [2011-09-06]
+Bugs:
+- Clean META-tags from HTML-tags while import
+- CRON import doesn't work
+- Wrong assign of ordering field when keeping old JoomShopping data
+- Wrong assign of ordering field for caterory fields
+
+Features:
+- Added notice for right currencies setup
+- Option: add VirtueMart product item attributes to JoomShopping product title
+- Import considering currency
+- Consider discount price for product while importing
+- Option: automatically generate aliases
+- Ordering field was not assigned for product files
+- Improved detection that JoomShopping and VirtueMart are installed
+
+Other:
+- German localization was removed (it was horrible)
+- minor fixes and refactoring
+
+Compatibility:
+- PHP 5.2/5.3
+- Joomla 1.5
+- JoomShopping 2.9.6
+- VirtueMart 1.1.9
+
+
+v1.4 [2011-08-21]
+Bugs:
+- Product images was not imported in non-resize mode
+- Wrong import of vendor logo with selected seting: thumb
+
+Features:
+- Shipping methods import
+- Free Attributes import
+- setting: make all custom attributes required
+- Product type parameters import
+- Import advanced attributes in VirtueMart style
+- Autorename files if files with given name already present
+
+Other:
+- In table jshop_categories field category_order was changed to ordering
+- Compartibility with new image processing class in new JoomShopping version
+- minor fixes and refactoring
+
+Compatibility:
+- PHP 5.2/5.3
+- Joomla 1.5
+- JoomShopping 2.9.5
+- VirtueMart 1.1.9
+
+
+v1.3 [2011-04-05]
+Features:
+- import Shop Info
+- setting: which image of shop logo / vendor to import (full or thumb)
+- custom attributes import
+- import video & additional photos
+
+Other:
+- minor refactoring
+- Support PHP 5.3
+
+Compatibility:
+- PHP 5.2/5.3
+- Joomla 1.5
+- JoomShopping 2.8.1
+- VirtueMart 1.1.8
+
+
+v1.2 [2011-03-25]
+Bugs:
+- wrong assign of category_parent_id
+
+Features:
+- setting: which category image to import (full or thumb)
+- setting: leave images size as is / resize to JoomShopping config
+
+Other:
+- Disable error reporting before using thumbnail_images class
+
+Compatibility:
+- PHP 5.2
+- Joomla 1.5
+- JoomShopping 2.7.3
+- VirtueMart 1.1.8
+
+
+v1.1 [2011-02-24]
+Bugs:
+- wrong assing of manufacturer to product
+- buggy ordering for manufacturers
+- thumb image for product import error
+- products with zero price was not imported
+- import exactly product shopper's price
+- for shipment price choose Shopper Group price, default only if product not in Shopper Group
+
+Features:
+- save settings in DB
+- remove fields products_sorting & products_sorting2, they are in JoomShopping config now
+- cronjob support
+- setting: delete JoomShopping data before import
+- vendors import
+- delete old files before import
+- import country from user extended data
+- import of product availability
+- setting: META-fields autofill
+- setting: make product items relative to parent after import
+- Remove script run time limit
+- show import progress
+- import coupon period of validity (disposable/permanent)
+- import product review publish state
+- import Shopper Groups (in JoomShopping - Usergroups)
+
+Other:
+- minor refactoring
+
+Compatibility:
+- PHP 5.2
+- Joomla 1.5
+- JoomShopping 2.7.3
+- VirtueMart 1.1.7
+
+
+v1.0 [2011-02-13]
+Bugs:
+- field product_count_related was removed from JoomShopping DB table
+
+Compatibility:
+- PHP 5.2
+- Joomla 1.5
+- JoomShopping 2.7.3
+
+
+v0.9 [2010-12-03]
+Bugs:
+- wrong assign of tax
+- bug in import of relation between products
+
+Features:
+- truncate tables that became meaningless after import
+
+Other:
+- code refactoring
+
+Compatibility:
+- PHP 5.2
+- Joomla 1.5
+
+
+v0.8 [2011-01-12]
+First version, basic import
+Features:
+- categories
+- coupons
+- manufacturers
+- products
+  - files
+  - images (not full)
+  - prices
+  - relations
+  - reviews
+  - category accessory
+- taxes
+- users
+
+Compatibility:
+- PHP 5.2
+- Joomla 1.5

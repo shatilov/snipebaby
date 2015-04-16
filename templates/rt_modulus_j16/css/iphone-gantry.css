@@ -1,0 +1,93 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+body {word-wrap: break-word;}
+body .rt-container {background: transparent;}
+body h1 {border-bottom: 0;}
+a {-webkit-transition: color 0 ease-out;}
+
+.rt-grid-1, .rt-grid-2, .rt-grid-3, .rt-grid-4, .rt-grid-5, .rt-grid-6, .rt-grid-7, .rt-grid-8, .rt-grid-9, .rt-grid-10, .rt-grid-11, .rt-grid-12 {margin: 0 5px;}
+.rt-normal .rt-container .rt-grid-12, .rt-flipped .rt-container .rt-grid-12 {width: 97%}
+.rt-left .rt-container .rt-grid-12, .rt-right .rt-container .rt-grid-12 {width: 98%}
+body #rt-menu {margin-top: 0 !important;}
+body #rt-menu .rt-container {padding-bottom: 5px;}
+body #rt-menu, body #rt-left-menu, body #rt-right-menu, body #rt-menu ul.menu li.active a {background: transparent !important;}
+body #rt-header-panel ul.menu li, body #rt-menu ul.menu li a {border-bottom: 0 !important;}
+body #rt-menu .root .separator {display:block; padding: 0 10px;border-bottom: 0 !important;line-height:2em;font-weight:bold;font-style:italic;}
+body #rt-menu.body-style-dark .root a {text-shadow:0 -1px 0 rgba(0, 0, 0, 0.8) !important;color:rgba(255, 255, 255, 0.4) !important;}
+body #rt-menu.body-style-light .root a {text-shadow:0 1px 0 rgba(0, 0, 0, 1) !important;color:rgba(255, 255, 255, 0.6) !important;}
+body #rt-menu.body-style-light .root.active a span {color: #000 !important;text-shadow: 0 -1px 0 #fff;}
+body #rt-menu.body-style-med .root a {text-shadow:0 1px 0 rgba(255, 255, 255, 0.8) !important;color:rgba(0, 0, 0, 0.3) !important;}
+body #rt-menu.body-style-med .root.active a span {color: #000 !important;text-shadow: 0 1px 0 #fff;}
+body #rt-header {padding: 0 !important;}
+body #rt-body-bg {padding-top: 0;}
+body #rt-logo {margin: 0 auto !important;}
+body .rt-joomla .rt-article {margin: 0 10px 35px !important;}
+body.cssstyle-style1 #rt-logo {background: url(../images/logo/style1/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style2 #rt-logo {background: url(../images/logo/style2/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style3 #rt-logo {background: url(../images/logo/style3/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style4 #rt-logo {background: url(../images/logo/style4/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style5 #rt-logo {background: url(../images/logo/style5/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style6 #rt-logo {background: url(../images/logo/style6/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style7 #rt-logo {background: url(../images/logo/style7/logo.png) 0 0 no-repeat!important;}
+body.cssstyle-style8 #rt-logo {background: url(../images/logo/style8/logo.png) 0 0 no-repeat!important;}
+/*body.cssstyle-style1 .root-sub a {color: #BF5A8C !important;}
+body.cssstyle-style2 .root-sub a {color: #819E5C !important;}
+body.cssstyle-style3 .root-sub a {color: #68B2D4 !important;}
+body.cssstyle-style4 .root-sub a {color: #DF2933 !important;}
+body.cssstyle-style5 .root-sub a {color: #D88E51 !important;}
+body.cssstyle-style6 .root-sub a {color: #D94348 !important;}
+body.cssstyle-style7 .root-sub a {color: #71B6D3 !important;}
+body.cssstyle-style8 .root-sub a {color: #DA90B9 !important;}*/
+body #rt-body-surround, body #rt-footer-surround {border-radius: 0;}
+body #rt-menu {margin-top:20px;}
+body #rt-showcase-panel, body #rt-feature-panel-accent {padding: 40px 0px 80px;}
+body #rt-footer-panel-accent {padding-top: 40px;}
+body #rocket {background-position: 0 0;background-repeat: no-repeat;}
+body #gantry-logo {background-position: 0 -36px;}
+body #developed-by, body #powered-by {font-size: 100%;}
+body #developed-by a {background-position-y: 8px;}
+body #powered-by {width: 102px;}
+body #developed-by a, body #powered-by a {margin: 0 auto;height: 19px;vertical-align: middle;}
+body #rt-showcase .rt-container .rt-block {border: 0;-webkit-box-shadow:none;text-shadow:none;background:transparent;}
+body #rt-showcase a.readon {text-shadow: none;}
+body #rt-showcase .rt-container .rt-block, body #rt-feature .rt-container .rt-block {margin: 10px;}
+body #rt-footer-panel {padding-top: 0;}
+.box1 .rt-block, .box2 .rt-block, .box3 .rt-block, .box4 .rt-block, .box5 .rt-block, .box6 .rt-block, .box7 .rt-block, .box8 .rt-block, .box9 .rt-block, .box10 .rt-block, .box11 .rt-block, .box12 .rt-block {border-radius: 8px !important;}
+body .rt-articleinfo {background: transparent; border-radius: 0;color: inherit;}
+body .module-title {margin: -10px -20px 10px;}
+body .main-title {margin: -10px -10px 10px;}
+body .component-content .rt-articleinfo {margin: -10px -20px 15px;}
+.promo.icon1 .module-content, .promo.icon2 .module-content, .promo.icon3 .module-content, .promo.icon4 .module-content, .promo.icon5 .module-content, .promo.icon6 .module-content {margin: -9px;}
+
+
+#rt-menu a:hover {color: #fff;}
+body #rt-menu ul.menu li.active a, body #rt-menu ul.menu li.active a:hover, body #rt-menu ul.menu li.active a span, body #rt-menu ul.menu li.active a:hover span {color: #fff !important;}
+
+/* Joomla */
+body .weblinks .rt-joomla-table img {width: 16px;height: 16px;}
+.rt-joomla .edit img {display: none;}
+body .rt-joomla .rt-article-bg {margin: 0 !important;padding: 0 !important;}
+.rt-joomla .rt-article {margin: 0 10px !important;padding: 0 !important;}
+
+/* Demo Content */
+.rt-demo-map, .rt-demo-prices {float:none;}
+.rt-demo-location, .rt-demo-register {margin-left: 0;}
+.rt-demo-map div {text-align: center}
+.rt-demo-prices {width: auto;}
+.rt-demo-prices h3, .rt-demo-location h3 {font-size: 200%;margin-top: 50px;}
+.rt-demo-title {font-size: 25px;}
+.rt-demo-title br {display: none;}
+.rt-normal .rt-demo-price, .rt-flipped .rt-demo-price {font-size: 50px;margin-right:10px;}
+.rt-normal .rt-demo-header .headline, .rt-flipped .rt-demo-header .headline {font-size: 400%;}
+.rt-left .rt-demo-header .headline, .rt-right .rt-demo-header .headline {font-size: 700%;}
+.rt-normal .rt-demo-header .rt-demo-count, .rt-flipped .rt-demo-header .rt-demo-count {width: 75px;}
+.rt-normal .rt-demo-header .rt-demo-count span, .rt-flipped .rt-demo-header .rt-demo-count span {font-size: 45px;}
+.rt-normal .rt-demo-header .rt-demo-button, .rt-flipped .rt-demo-header .rt-demo-button {padding-left: 0;}
+.rt-normal .rt-demo-button span, .rt-flipped .rt-demo-button span {font-size: 18px !important;}
+.rt-demo-button > div:last-child {margin-right:0;}

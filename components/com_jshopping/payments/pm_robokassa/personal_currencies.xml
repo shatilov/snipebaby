@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CurrenciesList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://merchant.roboxchange.com/WebService/">
+  <Result>
+    <Code>0</Code>
+  </Result>
+  <Groups>
+    <Group Code="BankCard" Description="Банковские карты">
+      <Items>
+        <Currency Label="BANKOCEAN2R" Name="Банковской картой" />
+        <Currency Label="OceanBankOceanR" Name="Банковской картой через Platezh.ru" />
+      </Items>
+    </Group>
+    <Group Code="EMoney" Description="Электронные валюты">
+      <Items>
+        <Currency Label="Qiwi29OceanR" Name="QIWI Wallet" />
+        <Currency Label="WMRM" Name="WMR" />
+        <Currency Label="WMZM" Name="WMZ" />
+        <Currency Label="WMEM" Name="WME" />
+        <Currency Label="WMUM" Name="WMU" />
+        <Currency Label="WMBM" Name="WMB" />
+        <Currency Label="W1R" Name="RUR W1" />
+        <Currency Label="EasyPayB" Name="EasyPay" />
+        <Currency Label="LiqPayZ" Name="USD LiqPay" />
+        <Currency Label="YandexMerchantOcean2R" Name="Yandex.Money" />
+        <Currency Label="TeleMoneyR" Name="RUR TeleMoney" />
+      </Items>
+    </Group>
+    <Group Code="EBank" Description="Интернет-Банк">
+      <Items>
+        <Currency Label="AlfaBankOceanR" Name="Альфа-Клик" />
+        <Currency Label="PSKBR" Name="Промсвязьбанк" />
+        <Currency Label="HandyBankMerchantOceanR" Name="HandyBank" />
+        <Currency Label="BSSMezhtopenergobankR" Name="Mezhtopenergobank" />
+        <Currency Label="BSSIntezaR" Name="Banca Intesa" />
+      </Items>
+    </Group>
+    <Group Code="MobileRetailers" Description="Салоны сотовой связи">
+      <Items>
+        <Currency Label="RapidaOceanSvyaznoyR" Name="Через Связной" />
+        <Currency Label="RapidaOceanEurosetR" Name="Через Евросеть" />
+      </Items>
+    </Group>
+    <Group Code="Qiwi" Description="QIWI Кошелек">
+      <Items>
+        <Currency Label="Qiwi29OceanR" Name="Через QIWI Кошелёк" />
+      </Items>
+    </Group>
+    <Group Code="Terminals" Description="Терминалы оплаты">
+      <Items>
+        <Currency Label="Qiwi29OceanR" Name="QIWI" />
+        <Currency Label="TerminalsMElementR" Name="Мобил Элемент" />
+        <Currency Label="TerminalsPinpayR" Name="Pinpay" />
+        <Currency Label="TerminalsElecsnetOceanR" Name="Элекснет" />
+        <Currency Label="TerminalsKassira.NetOceanR" Name="Кассира.нет" />
+      </Items>
+    </Group>
+    <Group Code="ATM" Description="Банкоматы">
+      <Items>
+        <Currency Label="TerminalsPkbR" Name="Petrokommerts" />
+        <Currency Label="VTB24R" Name="VTB24" />
+      </Items>
+    </Group>
+    <Group Code="Other" Description="Другие способы оплаты">
+      <Items>
+        <Currency Label="MtsR" Name="Mts" />
+        <Currency Label="MegafonR" Name="Мегафон" />
+      </Items>
+    </Group>
+  </Groups>
+</CurrenciesList>

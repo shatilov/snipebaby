@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="j2xml" method="upgrade">
+	<name>J2XML Importer 1.5</name>
+	<author>Helios Ciancio</author>
+	<creationDate>February 2013</creationDate>
+	<copyright>(C) 2013, Helios Ciancio. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL v3</license>
+	<authorEmail>info@eshiol.it</authorEmail>
+	<authorUrl>www.eshiol.it</authorUrl>
+	<version>2.5.4</version>
+	<description>J2XML Importer 1.5</description>
+	<files>
+		<filename plugin="importer15">importer15.php</filename>
+		<filename>1506.xsl</filename>
+		<filename>index.html</filename>
+	</files>
+ </extension>

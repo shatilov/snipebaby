@@ -1,0 +1,35 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Side Menus */
+body.rtl .module-content ul.menu li li a span, body.rtl .module-content ul.menu li li .separator, body.rtl .module-content ul.menu li li .item span {padding: 4px 15px 4px 10px;}
+body.rtl .module-content ul.menu .image img {float: right;}
+body.rtl .module-content ul.menu .item.image {padding-left: inherit;padding-right: 8px;}
+body.rtl .module-content ul.menu ul {padding: 10px 15px 10px 0;}
+
+/* Buttons and Inputs */
+body.rtl .rokchecks, body.rtl .rokradios {padding: 2px 22px 2px 0;}
+body.rtl .rokradios {background-position: 100% 1px;}
+body.rtl .rokradios-active {background-position: 100% -138px;}
+body.rtl .rokchecks {background-position: 100% -287px;}
+body.rtl .rokchecks-active {background-position: 100% -439px;}
+
+/* Breadcrumbs */
+body.rtl span.breadcrumbs a, body.rtl span.no-link {float: right;}
+
+/* Popup Module Feature */
+body.rtl #rt-login-button .buttontext, body.rtl #rt-popup-button .buttontext {float: left;}
+body.rtl #rt-popuplogin p {float: right;}
+body.rtl #rt-popuplogin p:first-child {margin-right: 0;margin-left: 10px;}
+body.rtl #rt-popuplogin .readon {float: left;}
+body.rtl #rt-popuplogin ul li {margin-right: 0;margin-left: 10px;}
+
+/* Custom Content */
+body.rtl .image-block-surround {float: right;margin-right: 0;margin-left: 15px;}
+body.rtl .number-image {float: right;margin-right: 0;margin-left: 15px;}
+body.rtl .number-image-text {;margin: 0 -5px -8px 0;}

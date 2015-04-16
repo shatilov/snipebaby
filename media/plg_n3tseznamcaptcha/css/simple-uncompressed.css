@@ -1,0 +1,31 @@
+/**
+ * @package n3tSeznamCaptcha
+ * @author Pavel Poles - n3t.cz
+ * @copyright (C) 2012-2014 - Pavel Poles - n3t.cz
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+
+.seznam-captcha {
+  border: 1px solid #dfdfdf;
+  padding: 7px;
+  overflow: hidden;
+  float: left;
+  line-height: 1.7em;
+  white-space: nowrap;
+}
+
+.seznam-captcha-image {
+  width: 170px;
+  height: 70px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.seznam-captcha-controls {
+  float: left;
+}
+
+.seznam-captcha-answer {
+  float: left;
+  clear: both;
+}

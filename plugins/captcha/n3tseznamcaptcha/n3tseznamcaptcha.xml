@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="captcha" method="upgrade">
+	<name>PLG_CAPTCHA_N3TSEZNAMCAPTCHA_MANIFEST_NAME</name>
+	<creationDate>2012-07-28</creationDate>
+	<author>Pavel Poles - n3t.cz</author>
+	<authorEmail></authorEmail>
+	<authorUrl>joomlacode.org/gf/project/n3t</authorUrl>
+	<copyright>(c) 2012-2014 Pavel Poles - n3t.cz. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.2.0</version>
+	<description>PLG_CAPTCHA_N3TSEZNAMCAPTCHA_MANIFEST_DESCRIPTION</description>
+  <updateservers>
+    <server type="collection" priority="1" name="n3t Extensions Updates">http://joomla.n3t.cz/updates/extensions.xml</server>
+  </updateservers>  	
+	<files>
+    <folder>fields</folder>
+
+		<filename plugin="n3tseznamcaptcha">n3tseznamcaptcha.php</filename>
+		<filename>captcha.audio.php</filename>
+		<filename>captcha.create.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media destination="plg_n3tseznamcaptcha" folder="media">
+    <folder>css</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+	  <filename>index.html</filename>
+	</media>
+	<languages folder="language">
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_captcha_n3tseznamcaptcha.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_captcha_n3tseznamcaptcha.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_captcha_n3tseznamcaptcha.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_captcha_n3tseznamcaptcha.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_captcha_n3tseznamcaptcha.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_captcha_n3tseznamcaptcha.sys.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.plg_captcha_n3tseznamcaptcha.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.plg_captcha_n3tseznamcaptcha.sys.ini</language>
+		<language tag="vi-VN">vi-VN/vi-VN.plg_captcha_n3tseznamcaptcha.ini</language>
+		<language tag="vi-VN">vi-VN/vi-VN.plg_captcha_n3tseznamcaptcha.sys.ini</language>
+	</languages>
+	<config>
+	  <fields name="params" addfieldpath="/plugins/captcha/n3tseznamcaptcha/fields">
+    	<fieldset name="captcha" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CAPTCHA_SETTINGS" description="">
+        <field name="enable_captcha" type="radioswitch" class="btn-group" default="1" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_ENABLE_CAPTCHA" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_ENABLE_CAPTCHA_DESC" />
+        <field name="theme" type="list" default="dark-icons" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME_DESC">
+          <option value="">PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME_NONE</option>
+          <option value="simple">PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME_SIMPLE</option>
+          <option value="dark-icons">PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME_DARK_ICONS</option>
+          <option value="light-icons">PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_THEME_LIGHT_ICONS</option>
+        </field>
+        <field name="show_audio" type="radioswitch" class="btn-group" default="1" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_SHOW_AUDIO" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_SHOW_AUDIO_DESC" />
+        <field name="show_loading" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_SHOW_LOADING" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_SHOW_LOADING_DESC" />
+      </fieldset>
+      <fieldset name="additional_protection" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_ADDITIONAL_PROTECTION" description="">
+        <field name="check_stopforumspam" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_STOPFORUMSPAM" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_STOPFORUMSPAM_DESC" more="http://www.stopforumspam.com" />
+        <field name="check_spambusted" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMBUSTED" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMBUSTED_DESC" more="http://www.spambusted.com" />
+        <field name="check_botscout" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_BOTSCOUT" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_BOTSCOUT_DESC" more="http://www.botscout.com" />
+        <field name="botscout_api_key" type="text" default="" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_BOTSCOUT_KEY" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_BOTSCOUT_KEY_DESC" />
+        <field name="check_spamhaus" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMHAUS" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMHAUS_DESC" more="http://www.spamhaus.org" />
+        <field name="check_sorbs" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SORBS" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SORBS_DESC" more="http://www.sorbs.net" />
+        <field name="check_spamcop" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMCOP" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_SPAMCOP_DESC" more="http://www.spamcop.net" />
+        <field name="check_honeypot" type="radioswitch" class="btn-group" default="0" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_HONEYPOT" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_CHECK_HONEYPOT_DESC" more="http://www.projecthoneypot.org" />
+        <field name="honeypot_api_key" type="text" default="" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_HONEYPOT_KEY" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_HONEYPOT_KEY_DESC" />
+        <field name="ip_whitelist" type="iplist" default="" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_IP_WHITELIST" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_IP_WHITELIST_DESC" rows="10" cols="35" />
+        <field name="ip_blacklist" type="iplist" default="" label="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_IP_BLACKLIST" description="PLG_CAPTCHA_N3TSEZNAMCAPTCHA_CFG_IP_BLACKLIST_DESC" rows="10" cols="35" />
+      </fieldset>
+	  </fields>
+	</config>  	
+</extension>

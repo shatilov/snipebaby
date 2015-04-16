@@ -1,0 +1,50 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Font Fix */
+@font-face {font-family: 'UbuntuRegular';src: url('../fonts/Ubuntu-Regular-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+
+/* Modules */
+.module-title .title br {display: none;}
+.module-content ul.menu a, .module-content ul.menu .separator, .module-content ul.menu .item {display: inline-block;vertical-align: middle;text-indent: 0;}
+.module-content ul.menu .image img {margin-left: -10px;margin-right: 6px;}
+.module-content ul.menu .subtext em {padding-left: 0;}
+.module-content ul.menu .image em {padding-left: 14px;}
+.rt-pollrow, .module-content ul.menu li a, .module-content ul.menu li .separator, .module-content ul.menu li .item, .roktabs-links ul li, .rokminievents-item {background-color: rgba(255,255,255,0);}
+.rt-pollrow input {left: 0 !important;visibility: hidden;}
+
+/* RokTwittie */
+body #roktwittie li {overflow: hidden;}
+
+/* Opacity and Transitions */
+a {-o-transition: color 0.2s ease-out;}
+#rt-body-surround .readon, .menutop li.root > .item span, .menutop ul li > .item, .module-content ul.menu li > a, .module-content ul.menu li > .separator, .module-content ul.menu li > .item,#rt-popuplogin .readon {-o-transition: background 0.2s ease-out;}
+#rt-top-surround .readon span,#rt-popuplogin .readon span,#rt-top-surround .readon .button, #rt-showcase .readon span, #rt-showcase .readon .button, #rt-footer-surround .readon span, #rt-footer-surround .readon .button, .rt-article-icons .icon, .rt-article-icons ul li a, .roktabs1 .roktabs-wrapper ul li, .roktabs2 .roktabs-wrapper ul li, .roktabs3 .roktabs-wrapper ul li, .roktabs4 .roktabs-wrapper ul li, .roktabs-wrapper .arrow-next, .roktabs-wrapper .arrow-prev, #rt-accessibility .button {-o-transition: background-color 0.2s ease-out;}
+#roktwittie .roktwittie-m2,.roksearch_result_wrapper1{-o-transition: background 0.2s ease-out;}
+#roktwittie .roktwittie-avatar img,.rokminievents-wrapper .timeline .progress .knob,.rokminievents-wrapper .rokminievent-page {-o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);}
+.roknewspager-li.active .roknewspager-h3, .roknewspager-li .roknewspager-h3:hover, .roknewspager-li.active .roknewspager-content {opacity: 1.0;}
+.roknewspager-li .roknewspager-h3, .roknewspager-li .roknewspager-content {-o-transition: opacity 0.3s linear;}
+.roknewspager-toggle-active, .roknewspager-toggle {-o-transition: opacity 0.2s linear;}
+
+/* load transition */
+#rt-body-bg.rt-hidden, #rt-footer-bg.rt-hidden {opacity: 0;}
+#rt-body-bg.rt-visible, #rt-footer-bg.rt-visible {opacity: 1;-o-transition: opacity 0.5s ease-out;transition: opacity 0.5s ease-out;}
+
+/* RTL */
+body.rtl .rokradios, body.rtl .rokradios-active, body.rtl .rokchecks, body.rtl .rokchecks-active {display: inline-block;}
+body.rtl .rt-pollrow .rokradios, body.rtl .rt-pollrow .rokradios-active, body.rtl .rt-pollrow .rokchecks, body.rtl .rt-pollrow .rokchecks-active {margin-right: 2px;}
+body.rtl #form-login ul, body.rtl #com-form-login ul, body.rtl ul.rt-more-articles, body.rtl .rt-section-list ul {direction: ltr;text-align: right;}
+body.rtl #form-login ul li a, body.rtl #com-form-login ul li a, body.rtl ul.rt-more-articles li a, body.rtl .rt-section-list ul li a, body.rtl ul.mostread li a, body.rtl ul.latestnews li a, body.rtl .weblinks ul li a {display: block;}
+
+/* Demo Presets */
+body .menutop .type-module ol li .fusion-module {overflow: visible;}
+.menu-preset a span {-o-transition: all 0.3s ease-in-out;-o-animation-iteration-count: 1;position:relative;z-index:3000;-o-transform: scale(1); cursor:pointer;}
+.menu-preset a:hover span {-o-transition: all 0.3s ease-in-out;-o-animation-iteration-count: 1;position:relative;z-index:3000;-o-transform: scale(1.1); cursor:pointer;}
+
+/* Additional Fixes */
+.roktabs-wrapper .roktabs-links ul li span {-o-user-select: none;}

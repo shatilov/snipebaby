@@ -1,0 +1,26 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Global */
+.menutop li {height: auto;margin: 0;padding: 0;position: relative;list-style: none;}
+.menutop em {font-size: 80%;font-weight: normal;display: block;font-style: normal;}
+.menutop li .item, .menutop li.active .item {display: block;text-decoration: none;float: none;width: auto;}
+
+/* Root Items */
+.menutop {list-style: none;padding: 0 0 0 2px;margin: 0;position: relative;line-height: 1em;display: inline-block;}
+.menutop li {float: left;margin: 0;padding: 0;}
+.menutop li .item {white-space: nowrap;display: block;font-size: 14px;z-index: 100;cursor: pointer;position: relative;padding: 5px 5px 0 5px;margin: 0 1px 0 -2px;outline: none;font-weight: normal;height: 50px;line-height: 45px;}
+.menutop li > .item:hover {text-shadow: none !important;}
+.menutop li > span.item {cursor: default;}
+.menutop li .subtext {line-height: 16px;}
+.menutop li .item span {display: block;outline: none;padding: 0 5px;width: auto;border-radius: 4px;transition: background 0.2s ease-out;}
+.menutop li .item em {font-size: 13px;display: block;font-style: normal;line-height: 100%;text-align: left;text-transform: lowercase;letter-spacing: normal;}
+
+/* RTL */
+body.rtl .menutop li {float: right;}
+body.rtl .menutop li .item em {text-align: right;}

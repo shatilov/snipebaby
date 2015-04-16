@@ -1,0 +1,125 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* RokAjaxSearch */
+#rt-page-surround .inputbox,#rt-popuplogin .inputbox   {border: 1px solid #404040;color: #999;}
+#rt-body-surround  #roksearch_search_str {background: #111 url(../images/bodystyle/dark/search-icon.png) no-repeat 98% 50%;}
+.roksearch_wrapper1 {background: #181818;}
+.roksearch_wrapper2 {background: #181818;border-color: #404040;}
+.roksearch_wrapper3 {background: url(../images/bodystyle/dark/title-overlay-top.png) 100% 0 repeat-x;}
+.roksearch_wrapper4 {background: url(../images/bodystyle/dark/title-overlay-bottom.png) 50% 100% repeat-x;}
+body #roksearch_results .roksearch_header, body #roksearch_results .roksearch_row_btm {color: #555;text-shadow: 1px 1px 0 #000000;}
+.roksearch_results a#roksearch_link {background: url(../images/bodystyle/dark/search-controls.png) 0 -50px no-repeat;}
+#roksearch_results .arrow-left {background: url(../images/bodystyle/dark/search-controls.png) 0 2px no-repeat;}
+#roksearch_results .arrow-left-disabled, #roksearch_results .arrow-right-disabled {background: url(../images/bodystyle/dark/search-controls.png) 0 -33px no-repeat;}
+#roksearch_results .arrow-right {background: url(../images/bodystyle/dark/search-controls.png) 0 -15px no-repeat;}
+.roksearch_result_wrapper1 {background: #181818;border-bottom: 1px solid #404040;}
+.roksearch_result_wrapper1:hover {background: #282828;border-bottom: 1px solid #404040;}
+
+/* RokComments */
+#idc-container .idc-comments .idc-c .idc-c-h-inner {background: #333 url(../images/bodystyle/dark/readon-bg.png) 50% 19% repeat-x;border: 1px solid #404040;}
+#idc-container .idc-user .idc-head_action.idc-user {background: #333 url(../images/bodystyle/dark/title-overlay-top.png) 50% 0% repeat-x;border: 1px solid #404040;}
+#idc-container .idc-comments .idc-c-t-inner  {border: 1px solid #404040;color: #999;}
+#idc-container .idc-btn_l .idc-r, #idc-container .idc-btn_s .idc-r {color: #999 !important;}
+#rt-body-surround .rk-commentcount a {color: #aaa;}
+#rt-body-surround .rk-commentcount {background: #333;border: 1px solid #121212;}
+#rt-body-surround .rk-commentcount a {background: url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;text-shadow: 1px 1px 0 #000000;border-top: 1px solid #666;}
+#rt-body-surround .rk-commentcount:hover {background: #222;}
+#idc-container div.idc-text_noresize, #idc-container textarea.idc-text_noresize {background: #181818 !important;border-color: #404040 !important;}
+#idc-container .idc-btn_l span, #idc-container .idc-btn_s span {border-color: #000 !important;border-radius: 12px 0px 0px 12px;background: #333 url(../images/overlays/dark/showcase-readon.png) 100% 5% repeat-x !important;}
+#idc-container .idc-btn_s .idc-r {border-radius: 0px 12px 12px 0px;}
+body #idc-container .idc-text_noresize, body #idc-container #IDCommentNewThreadText {color: #aaa !important;}
+
+/* RokFeatureTable */
+.featuretable-cell.ft-row-top,.featuretable-cell.ft-row-bottom {background-color: #000;}
+.featuretable-cell {border-top: 1px solid #404040;border-right: 1px solid #404040;background:#f9f9f9;text-shadow: 0 1px 0 #000;}
+.ft-row-odd, .ft-row-even {background: #181818 url(../images/bodystyle/dark/title-overlay-top.png) 100% 0 repeat-x;}
+.ft-row-bottom {border-bottom: 1px solid #404040;}
+.ft-highdark .featuretable-cell.ft-row-top {background: url(../images/overlays/dark/showcase-readon.png) 100% 0 repeat-x;text-shadow: 0 1px 0 #333;}
+.ft-highdark .ft-row-odd,.ft-highdark .ft-row-even {background: #181818 url(../images/bodystyle/dark/title-overlay-top.png) 100% 0 repeat-x;}
+
+/* RokMiniEvents */
+.timeline .progress-wrapper, .rokminievents-badge {background: #333 url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;border: 1px solid #404040;}
+.rokminievents-wrapper .rokminievent-page {background: #333 url(../images/bodystyle/dark/readon-bg.png) 50% 30% repeat-x;border: 1px solid #404040;}
+.rokminievents-wrapper .timeline .progress .knob {background: url(../images/dark/overlay-top2.png) 50% 100% repeat-x;}
+.rokminievents-badge .day, .timeline-dates.date-inline .active {background: url(../images/overlays/dark/showcase-readon.png) 100% 0% repeat-x;text-shadow: 0px 0px 4px rgba(0,0,0,0.3);}
+.rokminievents-badge .month, .rokminievents-badge .year {color: #999999;}
+.rokminievents-wrapper .right-arrow, .rokminievents-wrapper .left-arrow {background-image: url(../images/bodystyle/dark/roktabs-arrows.png);background-color: #333;border: 1px solid #555;}
+
+/* RokNewsFlash */
+#rt-page-surround .roknewsflash .controls .control-next, #rt-page-surround .roknewsflash .controls .control-prev {background-image: url(../images/bodystyle/dark/roktabs-arrows.png);background-color: #383838;border: 1px solid #555;}
+
+/* RokNewsPager */
+.roknewspager-toggle {background: transparent url(../images/bodystyle/dark/roknewspager_toggle.png) 100% 100% no-repeat;}
+.roknewspager .roknewspager-title {text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.9);}
+.roknewspager-prev, .roknewspager-next, .roknewspager-prev-disabled, .roknewspager-next-disabled {background-image: url(../images/bodystyle/dark/list-arrows.png);}
+.roknewspager-numbers li {background: #333 url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;border: 1px solid #404040;}
+.roknewspager-numbers li.active {background: url(../images/overlays/dark/showcase-readon.png) 100% 0% repeat-x;text-shadow: 0 0 4px rgba(0,0,0,0.3);}
+
+/* RokStock */
+#rt-page-surround #rokstock .rokstock-add, #rt-page-surround #rokstock .rokstock-list .row {background: #333 url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;border: 1px solid #404040;color: #666666;} 
+#rt-page-surround #rokstock .legend {background-image: url(../images/bodystyle/dark/rokstock_circles.png);}
+#rt-page-surround #rokstock .row .delete, #rt-page-surround #rokstock .rokstock-reload {background-color: transparent;}
+.rokstock-tooltip {box-shadow: 0 0 5px rgba(0,0,0,0.2);}
+#rt-page-surround #rokstock {background: none;}
+#rt-page-surround #rokstock .rokstock-reload {background: transparent url(../images/bodystyle/dark/rokstock_reload.png) center center no-repeat;}
+#rt-page-surround #rokstock input {background: #222;border: 1px solid #505050;}
+
+/* RokTabs General */
+.roktabs-wrapper .arrow-next, .roktabs-wrapper .arrow-prev {background-image: url(../images/bodystyle/dark/roktabs-arrows.png);}
+.roktabs1 .roktabs-links ul li.active span, .roktabs1 .roktabs-links ul li:hover span, .roktabs2 .roktabs-links ul li.active span, .roktabs2 .roktabs-links ul li:hover span, .roktabs3 .roktabs-links ul li.active span, .roktabs3 .roktabs-links ul li:hover span, .roktabs4 .roktabs-links ul li.active span, .roktabs4 .roktabs-links ul li:hover span {color: #ccc;}
+
+/* RokTabs Style 1 */
+.roktabs1 .roktabs-wrapper {background: #282828;border: 1px solid #404040;box-shadow: 0 0 5px rgba(0,0,0,0.8);}
+.roktabs1 .roktabs-links ul li {background: #333;border: 1px solid #606060;}
+.roktabs1 .roktabs-links ul li span {background: url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;text-shadow: -1px -1px 0 rgba(0,0,0,0.5);}
+.roktabs1 .roktabs-links ul li:hover {background: #222;}
+.roktabs1 .roktabs-links ul li.active {background: #505050;box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);border: 1px solid #606060;}
+.roktabs1 .arrow-next, .roktabs1 .arrow-prev {background-color: #383838;border: 1px solid #606060;}
+.roktabs1 .arrow-next:hover, .roktabs1 .arrow-prev:hover {background-color: #505050;box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);border: 1px solid #606060;}
+
+/* RokTabs Style 2 */
+.roktabs2 .roktabs-container-inner {background: #282828;border: 1px solid #404040;box-shadow: 0 0 5px rgba(0,0,0,0.8);}
+.roktabs2 .roktabs-links ul li {background: #333;border: 1px solid #606060;}
+.roktabs2 .roktabs-links ul li:hover {background: #222;}
+.roktabs2 .roktabs-links ul li span {background: url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;text-shadow: -1px -1px 0 rgba(0,0,0,0.5);}
+.roktabs2 .roktabs-links ul li.active {background: #505050;}
+.roktabs2 .arrow-next, .roktabs2 .arrow-prev {background-color: #383838;border: 1px solid #606060;}
+.roktabs2 .arrow-next:hover, .roktabs2 .arrow-prev:hover {background-color: #505050;}
+
+/* RokTabs Style 3 */
+.roktabs3 .roktabs-wrapper .module-title {background: #303030;border: 1px solid #404040;box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);}
+.roktabs3 .roktabs-container-inner {background: #303030;border: 1px solid #404040;box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);}
+.roktabs3 .roktabs-links ul li.active {background: #505050;border: 1px solid #606060;}
+.roktabs3 .arrow-next, .roktabs3 .arrow-prev {background-color: #383838;border: 1px solid #606060;}
+.roktabs3 .arrow-next:hover, .roktabs3 .arrow-prev:hover {background-color: #505050;}
+
+/* RokTabs Style 4 */
+.roktabs4 .roktabs-container-inner {background: #282828;border: 1px solid #404040;box-shadow: 0 0 5px rgba(0,0,0,0.8);}
+.roktabs4 .roktabs-links ul li {background-color: #333;border: 1px solid #606060;}
+.roktabs4 .roktabs-links ul li:hover {background: #222;}
+.roktabs4 .roktabs-links ul li span {background: url(../images/bodystyle/dark/readon-bg.png) 50% 50% repeat-x;text-shadow: -1px -1px 0 rgba(0,0,0,0.5);}
+.roktabs4 .roktabs-links ul li.active {background-color: #505050;}
+
+/* RokTwittie */
+#roktwittie .header {text-shadow: 1px 1px 0 #000;}
+.dual-bg, #roktwittie .roktwittie-m1 {background: #333;}
+.dual-bg1, #roktwittie .roktwittie-m2 {background: #333;border-color: #222;}
+#roktwittie .roktwittie-m2 {transition: background 0.2s ease-out;}
+#roktwittie .roktwittie-m2:hover {background: #222;}
+.dual-bg2, #roktwittie .roktwittie-m3 {background: url(../images/bodystyle/dark/title-overlay-top.png) 100% 0 repeat-x;}
+.dual-bg3, #roktwittie div.roktwittie-text {background: url(../images/bodystyle/dark/title-overlay-bottom.png) 50% 100% repeat-x;}
+#roktwittie .roktwittie-t1 {background: transparent url(../images/bodystyle/dark/twittie.png) no-repeat;}
+#roktwittie .roktwittie-avatar img {background-color: #333;border-color:#222;}
+
+/* RokWeather */
+#rt-page-surround  #rokweather .icon div {color: #666;}
+#rt-page-surround #rokweather h5,#rt-page-surround #rokweather .row {border-bottom: 1px solid #444;}
+/* RokBox */
+body #rokbox-middle .rokbox-right {background: #333;}
+body #rokbox-close {border-color: #555;}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+
+	<tip label="Top Section" id="topblock"><![CDATA[The Top Section controls allow you to modify the style settings for that section.]]></tip>
+	
+	<tip label="Showcase Section" id="showcaseblock"><![CDATA[The Showcase Section controls allow you to modify the style settings for that section.]]></tip>
+	
+	<tip label="Body Section" id="body"><![CDATA[The Body Section controls allow you to modify the style settings for that section.]]></tip>
+	
+	<tip label="Footer Section" id="footerblock"><![CDATA[The Footer Section controls allow you to modify the style settings for that section.]]></tip>
+	
+	<tip label="Load Transition" id="loadtransition"><![CDATA[Enable or disable the page loading transition animation effects.]]></tip>
+	
+	<tip label="Fixed Header" id="fixedheader"><![CDATA[Enable or Disable a fixed floating header section.]]></tip>
+	
+	<tip label="Read More Style" id="readonstyle"><![CDATA[<strong>The Read More Style</strong> setting allows you to select an available style type for the display of read more links in the template.]]></tip>
+		
+	<tip label="WebFonts" id="webfonts"><![CDATA[This setting allows you to use <strong>3rd party WebFonts</strong> from providers such as Google. You must first set WebFonts to show and then save your changes, then the available WebFonts will appear in the Font Settings dropdown from where they can be selected.]]></tip>
+	
+	<tip label="Font Settings" id="font"><![CDATA[A selection of fonts to be applied to your site's frontend is available from the <strong>Font Settings</strong> dropdown. It is also possible to set the <strong>Font Size</strong> according to your preference.]]></tip>
+	
+</gantrytips>

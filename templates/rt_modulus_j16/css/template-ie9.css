@@ -1,0 +1,15 @@
+/**
+ * @package   Modulus Template - RocketTheme
+ * @version   1.6.5 December 12, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+ 
+#rt-accessibility:hover {zoom: 1;}
+.controls .up3, .controls .down3, .roktabs-wrapper .roktabs-links ul li span {-ms-user-select: none;}
+
+
+/* load transition */
+#rt-body-bg.rt-hidden, #rt-footer-bg.rt-hidden {opacity: 0;}
+#rt-body-bg.rt-visible, #rt-footer-bg.rt-visible {opacity: 1;-ms-transition: opacity 0.5s ease-out;transition: opacity 0.5s ease-out;}

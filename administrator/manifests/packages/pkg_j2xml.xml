@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+<name>J2XML</name>
+<author>Helios Ciancio</author>
+<creationDate>January 2013</creationDate>
+<packagename>j2xml</packagename>
+<version>2.5.rc1</version>
+<url>http://www.eshiol.it</url>
+<packager>Helios Ciancio</packager>
+<packagerurl>http://www.eshiol.it/</packagerurl>
+<description>Package installer for J2XML</description>
+<update>http://www.eshiol.it/update</update>
+<files>
+   <file type="library" id="eshiol/core">lib_eshiol-12.11.4.zip</file>
+   <file type="library" id="eshiol/j2xml">lib_j2xml-13.2.100.zip</file>
+   <file type="component" id="j2xml" >com_j2xml-2.5.93.zip</file>
+   <file type="plugin" id="j2xml" group="system">plg_system_j2xml-2.5.22.zip</file>
+   <file type="plugin" id="importer15" group="j2xml">plg_j2xml_importer15-2.5.4.zip</file>   
+</files>
+</extension>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+<name>Jshopping Cart Ext.</name>
+    <creationDate>01.01.2012</creationDate>
+    <author>MAXXmarketing GmbH</author>
+    <authorEmail>marketing@maxx-marketing.net</authorEmail>
+    <authorUrl>http://www.webdesigner-profi.de</authorUrl>
+    <copyright></copyright>
+    <license>Open Source License, GNU GPL</license>
+    <version>3.0.3</version>
+    <description>Displays a JoomShopping cart</description>
+    <files>
+        <filename module="mod_jshopping_cart_ext">mod_jshopping_cart_ext.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <languages>
+        <language
+            tag="en-GB">en-GB.mod_jshopping_cart_ext.ini</language>
+		<language
+            tag="de-DE">de-DE.mod_jshopping_cart_ext.ini</language>
+		<language
+            tag="ru-RU">ru-RU.mod_jshopping_cart_ext.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic"> 
+               <field
+                    name="show_count"
+                    type="radio"
+                    default="1"
+                    label="SHOW COUNT OF PRODUCT"
+                    description="SHOW COUNT OF PRODUCT">
+                    <option
+                        value="0">JNO</option>
+                    <option
+                        value="1">JYES</option>
+                </field>                 
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" /> 
+                <field
+                    name="picture_link"
+                    type="media"
+                    label="Picture links"
+                    description="Select picture link." />                              
+            </fieldset> 
+        </fields>
+    </config>          
+</extension>
