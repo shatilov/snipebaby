@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.13.0 22.07.2011
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -183,7 +183,6 @@ class JshoppingControllerManufacturers extends JController{
         $dispatcher = JDispatcher::getInstance();
         $dispatcher->trigger( 'onBeforeRemoveManufacturer', array(&$cid) );
         foreach ($cid as $key => $value) {
-            $query = "DELETE FROM `#__jshopping_manufacturers` WHERE `manufacturer_id` = '" . $db->escape($value) . "'";                       
             $manuf = JSFactory::getTable('manufacturer', 'jshop');
             $manuf->load($value);
             $manuf->delete();

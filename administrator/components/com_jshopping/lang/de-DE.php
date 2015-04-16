@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 15.11.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -244,9 +244,9 @@ define('_JSHOP_CONFIG','Einstellungen');
 define('_JSHOP_EDIT_CONFIG','Konfiguration bearbeiten');
 define('_JSHOP_GENERAL_PARAMETERS','Allgemein');
 define('_JSHOP_CURRENCY_PARAMETERS','Währung');
-define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Bild / Video');
+define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Bild');
 define('_JSHOP_STATIC_TEXT','Statische Texte');
-define('_JSHOP_CAT_PROD','Kategorie / Produkte');
+define('_JSHOP_CAT_PROD','Produkte');
 define('_JSHOP_CHECKOUT','Kasse');
 define('_JSHOP_SHOP_FUNCTION','Shop-Funktionen');
 define('_JSHOP_MAIN_LANGUAGE','Admin Sprache');
@@ -297,7 +297,7 @@ define('_JSHOP_HIDE_PAYMENT_STEP','Ausblenden Schritt Zahlung (oberste Bezahlart
 define('_JSHOP_HIDE_PRODUCT_NOT_AVAIBLE_STOCK','Verbergen der Produkte, die nicht ab Lager lieferbar sind');
 define('_JSHOP_VIDEO_PRODUCT_WIDTH','Breite für Video-Größe');
 define('_JSHOP_VIDEO_PRODUCT_HEIGHT','Höhe für Video-Größe');
-define('_JSHOP_SHOW_BAY_BUT_IN_CAT','Anzeigen des Link "In den Warenkorb"');
+define('_JSHOP_SHOW_BAY_BUT_IN_CAT','Anzeigen des Links "In den Warenkorb"');
 define('_JSHOP_ORDER_EMAIL_DESCR','Beschreibung des Auftrags für den Kunden (in E-Mail)');
 define('_JSHOP_ORDER_EMAIL_DESCR_END','Beschreibung des Auftrags für den Kunden (in E-Mail, Ende)');
 define('_JSHOP_USER_AS_CATALOG','Verwendung des Shop als Katalog');
@@ -930,13 +930,16 @@ define('_JSHOP_LOAD','Laden');
 
 define('_JSHOP_OC', 'Andere Config');
 define('_JSHOP_OC_cart_back_to_shop', 'Back to-Shop (Link im Warenkorb)');
-define('_JSHOP_OC_cart_back_to_shop_INFO', 'product / list / shop');
+define('_JSHOP_OC_cart_back_to_shop_product', 'Product');
+define('_JSHOP_OC_cart_back_to_shop_list', 'List products');
+define('_JSHOP_OC_cart_back_to_shop_shop', 'Shop');
 define('_JSHOP_OC_product_button_back_use_end_list', 'Produkt-Taste zurück (Ende verwenden Liste)');
 define('_JSHOP_OC_display_tax_id_in_pdf', 'Steuer-ID-Anzeige, wenn PDF');
 define('_JSHOP_OC_image_quality', 'Bildqualität');
 define('_JSHOP_OC_image_fill_color', 'Bild Füllfarbe');
 define('_JSHOP_OC_product_price_qty_discount', 'Produkt Preis Menge Rabatt');
-define('_JSHOP_OC_product_price_qty_discount_INFO', '1 - Preis, 2 - Prozent ');
+define('_JSHOP_OC_product_price_qty_discount_price', 'Preis');
+define('_JSHOP_OC_product_price_qty_discount_percent', 'Prozent');
 define('_JSHOP_OC_rating_starparts', 'Bewertung stratparts');
 define('_JSHOP_OC_rating_starparts_INFO', 'Stern ist auf {2} Teil geteilt');
 define('_JSHOP_OC_show_list_price_shipping_weight', 'Zeige Listenpreis Gewicht');
@@ -944,7 +947,9 @@ define('_JSHOP_OC_product_price_precision', 'Produktpreis Präzision');
 define('_JSHOP_OC_cart_decimal_qty_precision', 'Zeige dezimal Menge Präzision');
 define('_JSHOP_OC_default_frontend_currency', 'Standard-Frontend Währung ID');
 define('_JSHOP_OC_product_file_upload_via_ftp', 'Produkt-Datei-Upload (über FTP)');
-define('_JSHOP_OC_product_file_upload_via_ftp_INFO', '0 - Upload-Datei, 1 - Set-Namen-Datei, 2 - {0,1}');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file', 'Upload-Datei');
+define('_JSHOP_OC_product_file_upload_via_ftp_set_name_file', 'Set-Namen-Datei');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file_or_set_name_file', 'Upload-Datei oder Set-Namen-Datei');
 define('_JSHOP_OC_product_file_upload_count', 'Datei-Upload Produkt count');
 define('_JSHOP_OC_product_image_upload_count', 'Produkt-Bild-Upload count');
 define('_JSHOP_OC_product_video_upload_count', 'Produkt-Video-Upload count');

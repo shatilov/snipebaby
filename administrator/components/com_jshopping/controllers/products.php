@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 10.09.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -76,7 +76,7 @@ class JshoppingControllerProducts extends JController{
             $firstVendor = array();
             $firstVendor[0] = new stdClass();
             $firstVendor[0]->id = -1;
-            $firstVendor[0]->name = " - - - ";
+            $firstVendor[0]->name = " - "._JSHOP_VENDOR." - ";
             $lists['vendors'] = JHTML::_('select.genericlist', array_merge($firstVendor, $vendors), 'vendor_id','onchange="document.adminForm.submit();"', 'id', 'name', $vendor_id);
             
             foreach($rows as $k=>$v){
@@ -90,7 +90,7 @@ class JshoppingControllerProducts extends JController{
 
         $parentTop = new stdClass();
         $parentTop->category_id = 0;
-        $parentTop->name = " - - - ";
+        $parentTop->name = "- "._JSHOP_CATEGORY." -";
         $categories_select = buildTreeCategory(0,1,0);
         array_unshift($categories_select, $parentTop);
         $lists['treecategories'] = JHTML::_('select.genericlist', $categories_select,'category_id','onchange="document.adminForm.submit();"', 'category_id', 'name', $category_id );
@@ -98,7 +98,7 @@ class JshoppingControllerProducts extends JController{
         $manuf1 = array();
         $manuf1[0] = new stdClass();
         $manuf1[0]->manufacturer_id = '0';
-        $manuf1[0]->name = " - - - ";
+        $manuf1[0]->name = " - "._JSHOP_NAME_MANUFACTURER." - ";
 
         $_manufacturer = JSFactory::getModel('manufacturers');
         $manufs = $_manufacturer->getList();
@@ -110,13 +110,13 @@ class JshoppingControllerProducts extends JController{
             $_labels = JSFactory::getModel("productLabels");
             $alllabels = $_labels->getList();
             $first = array();
-            $first[] = JHTML::_('select.option', '0'," - - - ", 'id','name');
+            $first[] = JHTML::_('select.option', '0', " - "._JSHOP_LABEL." - ", 'id','name');
             $lists['labels'] = JHTML::_('select.genericlist', array_merge($first, $alllabels), 'label_id','onchange="document.adminForm.submit();"','id','name', $label_id);
         }
         //
 
         $f_option = array();
-        $f_option[] = JHTML::_('select.option', 0, " - - - ", 'id', 'name');
+        $f_option[] = JHTML::_('select.option', 0, " - "._JSHOP_SHOW." - ", 'id', 'name');
         $f_option[] = JHTML::_('select.option', 1, _JSHOP_PUBLISH, 'id', 'name');
         $f_option[] = JHTML::_('select.option', 2, _JSHOP_UNPUBLISH, 'id', 'name');
         $lists['publish'] = JHTML::_('select.genericlist', $f_option, 'publish', 'onchange="document.adminForm.submit();"', 'id', 'name', $publish);
@@ -1418,10 +1418,12 @@ class JshoppingControllerProducts extends JController{
             $currency_value = 1;
         }
         
+		$product_price = getPriceFromCurrency($product->product_price, $product->currency_id, $currency_value);
+		
         $res = array();
         $res['product_id'] = $product->product_id;
         $res['product_ean'] = $product->product_ean;
-        $res['product_price'] = $product->product_price * $currency_value;
+        $res['product_price'] = $product_price;
         $res['delivery_times_id'] = $product->delivery_times_id;
         $res['vendor_id'] = fixRealVendorId($product->vendor_id);
         $res['product_weight'] = $product->product_weight;

@@ -2,6 +2,7 @@
 	defined('_JEXEC') or die();
 	$attr_id = $this->attr_id; 
 ?>
+<div class="jshop_edit">
 <form action = "index.php?option=com_jshopping&controller=attributesvalues&attr_id=<?php echo $attr_id?>" method = "post" name = "adminForm" enctype = "multipart/form-data">
 <?php print $this->tmp_html_start?>
 <div class="col100">
@@ -46,3 +47,4 @@
 <input type = "hidden" name = "attr_id" value = "<?php echo $attr_id;?>" />
 <?php print $this->tmp_html_end?>
 </form>
+</div>

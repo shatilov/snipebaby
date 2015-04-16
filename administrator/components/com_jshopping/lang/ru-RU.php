@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 15.11.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -239,9 +239,9 @@ define('_JSHOP_CONFIG','Конфигурация');
 define('_JSHOP_EDIT_CONFIG','Редактировать конфигурацию');
 define('_JSHOP_GENERAL_PARAMETERS','Основное');
 define('_JSHOP_CURRENCY_PARAMETERS','Валюта');
-define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Изображение / Видео');
+define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Изображение');
 define('_JSHOP_STATIC_TEXT','Cтатический текст');
-define('_JSHOP_CAT_PROD','Категория / Товар');
+define('_JSHOP_CAT_PROD','Товар');
 define('_JSHOP_CHECKOUT','Заказ');
 define('_JSHOP_SHOP_FUNCTION','Функции магазина');
 define('_JSHOP_MAIN_LANGUAGE','Язык админки');
@@ -902,13 +902,16 @@ define('_JSHOP_LOAD','Загрузить');
 
 define('_JSHOP_OC','Другие параметры');
 define('_JSHOP_OC_cart_back_to_shop','Назад в магазин (ссылка в корзине)');
-define('_JSHOP_OC_cart_back_to_shop_INFO', 'product / list / shop');
+define('_JSHOP_OC_cart_back_to_shop_product', 'Продукт');
+define('_JSHOP_OC_cart_back_to_shop_list', 'Список продуктов');
+define('_JSHOP_OC_cart_back_to_shop_shop', 'Магазин');
 define('_JSHOP_OC_product_button_back_use_end_list','Кнопка "Назад" в продукте (в конце списка)');
 define('_JSHOP_OC_display_tax_id_in_pdf', 'Показать идентификационный номер налогоплательщика в PDF');
 define('_JSHOP_OC_image_quality','Качество изображения');
 define('_JSHOP_OC_image_fill_color','Цвет заливки изображения');
 define('_JSHOP_OC_product_price_qty_discount','Скидка на партию');
-define('_JSHOP_OC_product_price_qty_discount_INFO', '1 - цена, 2 - процент');
+define('_JSHOP_OC_product_price_qty_discount_price', 'цена');
+define('_JSHOP_OC_product_price_qty_discount_percent', 'процент');
 define('_JSHOP_OC_rating_starparts','Рейтинг части звезды');
 define('_JSHOP_OC_rating_starparts_INFO','звезда делится на {x} части');
 define('_JSHOP_OC_show_list_price_shipping_weight', 'Показать прайс-лист вес брутто');
@@ -916,7 +919,9 @@ define('_JSHOP_OC_product_price_precision','Точность цены проду
 define('_JSHOP_OC_cart_decimal_qty_precision','Точность количества');
 define('_JSHOP_OC_default_frontend_currency', 'Frontend Валюта ID по умолчанию');
 define('_JSHOP_OC_product_file_upload_via_ftp','Загрузки файлов продукта (через FTP)');
-define('_JSHOP_OC_product_file_upload_via_ftp_INFO', '0 - загрузка файла, 1 - набор файлов имя, 2 - {0,1} ');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file', 'Загрузка файла');
+define('_JSHOP_OC_product_file_upload_via_ftp_set_name_file', 'Имя файла');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file_or_set_name_file', 'Загрузка файла или имя файла');
 define('_JSHOP_OC_product_file_upload_count','Количество файлов продукта');
 define('_JSHOP_OC_product_image_upload_count','Количество изображений продукта');
 define('_JSHOP_OC_product_video_upload_count','Количество видео продукта');
@@ -939,7 +944,7 @@ define('_JSHOP_OC_list_products_calc_basic_price_from_product_price','Расче
 define('_JSHOP_OC_calc_basic_price_from_product_price','Расчет базовой цены от цены продукта');
 define('_JSHOP_OC_user_discount_not_apply_prod_old_price','Скидка клиента не применяется к товарам со старой ценой');
 define('_JSHOP_OC_advert','Реклама');
-define('_JSHOP_OC_hide_from_basic_price','Hide from for basic price');
+define('_JSHOP_OC_hide_from_basic_price','Скрыть "от" для базовой цены');
 
 define('_JSHOP_SHOW_EXTRA_FIELDS_CART','Показать характеристики в Корзине');
 define('_JSHOP_OVERRIDING_ADDRESSES','Переопределение адресов');

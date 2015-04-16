@@ -128,6 +128,25 @@ displaySubmenuConfigs('image');
     <td>
     </td>
   </tr>
+  
+  <tr>
+    <td class="key">
+        <?php echo _JSHOP_OC_image_quality?>
+    </td>
+    <td>
+        <input type="text" name="image_quality" value ="<?php echo $jshopConfig->image_quality?>" />
+    </td>
+  </tr>
+  
+  <tr>
+    <td class="key">
+        <?php echo _JSHOP_OC_image_fill_color?>
+    </td>
+    <td>
+        <input type="text" name="image_fill_color" value ="<?php echo $jshopConfig->image_fill_color?>" />
+    </td>
+  </tr>
+  
   <?php $pkey = "etemplatevar";if ($this->$pkey){print $this->$pkey;}?>
 </table>
 </fieldset>

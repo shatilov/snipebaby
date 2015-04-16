@@ -141,10 +141,10 @@
      </td>
      <?php print $row->_tmp_cols_4?>
      <td>
-       <?php echo $row->order_date;?>
+       <?php echo formatdate($row->order_date, 1);?>
      </td>
      <td>
-       <?php echo $row->order_m_date;?>
+       <?php echo formatdate($row->order_m_date, 1);?>
      </td>
      <?php print $row->_tmp_cols_5?>
      <?php if (!$jshopConfig->without_payment){?>
@@ -204,6 +204,7 @@
     $cols = 10;
     if (!$jshopConfig->without_payment) $cols++;
     if (!$jshopConfig->without_shipping) $cols++;
+	if ($this->show_vendor) $cols++;
     ?>
     <?php print $this->_tmp_cols_foot_total?>
     <td colspan="<?php print $cols+(int)$this->deltaColspan0?>" align="right"><b><?php print _JSHOP_TOTAL?></b></td>
@@ -219,6 +220,7 @@
     $cols = 20;
     if (!$jshopConfig->without_payment) $cols++;
     if (!$jshopConfig->without_shipping) $cols++;
+	if ($this->show_vendor) $cols++;
     ?>
     <?php print $this->tmp_html_col_before_td_foot?>
     <td colspan="<?php print $cols+(int)$this->deltaColspan?>">

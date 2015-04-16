@@ -74,7 +74,7 @@
     </th>
     <?php if ($this->config->stock){?>
     <th width="60">
-        <?php echo JHTML::_( 'grid.sort', _JSHOP_QUANTITY_PRODUCT, 'qty', $this->filter_order_Dir, $this->filter_order);?>
+        <?php echo JHTML::_( 'grid.sort', _JSHOP_QUANTITY, 'qty', $this->filter_order_Dir, $this->filter_order);?>
     </th>
     <?php }?>
     <th width="80">
@@ -172,7 +172,7 @@
     <?php echo $row->hits;?>
    </td>
    <td>
-    <?php echo $row->product_date_added;?>
+    <?php echo formatdate($row->product_date_added, 1);?>
    </td>
    <?php if ($category_id) {?>
    <td align="right" width="20">

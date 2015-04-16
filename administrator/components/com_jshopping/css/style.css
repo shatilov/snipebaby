@@ -82,7 +82,7 @@ tr.bold td, tr.bold th, td.bold, th.bold{
 td.center, th.center, tr.center td, tr.center th{
 	text-align: center;
 }
-td.right, th.right, tr.right td, tr.right th{
+td.right, th.right, tr.right td, tr.right th, .table td.right, .table th.right{
 	text-align: right;
 }
 table.table_attr{

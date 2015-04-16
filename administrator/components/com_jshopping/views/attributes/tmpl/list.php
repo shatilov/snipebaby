@@ -4,7 +4,7 @@ displaySubmenuOptions();
 $rows = $this->rows;
 $count = count ($rows);
 $i = 0; 
-$saveOrder = $this->filter_order_Dir=="asc" && $this->filter_order=="attr_ordering";
+$saveOrder = $this->filter_order_Dir=="asc" && $this->filter_order=="A.attr_ordering";
 ?>
 <form action = "index.php?option=com_jshopping&controller=attributes" method = "post" name = "adminForm">
 <?php print $this->tmp_html_start?>

@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 15.11.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -241,9 +241,9 @@ define('_JSHOP_CONFIG','Configuration');
 define('_JSHOP_EDIT_CONFIG','Edit configuration');
 define('_JSHOP_GENERAL_PARAMETERS','General');
 define('_JSHOP_CURRENCY_PARAMETERS','Currency');
-define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Image / Video');
+define('_JSHOP_IMAGE_VIDEO_PARAMETERS','Image');
 define('_JSHOP_STATIC_TEXT','Static text');
-define('_JSHOP_CAT_PROD','Category / Product');
+define('_JSHOP_CAT_PROD','Product');
 define('_JSHOP_CHECKOUT','Checkout');
 define('_JSHOP_SHOP_FUNCTION','Shop functions');
 define('_JSHOP_MAIN_LANGUAGE','Admin language');
@@ -917,13 +917,16 @@ define('_JSHOP_LOAD','Load');
 
 define('_JSHOP_OC', 'Other config');
 define('_JSHOP_OC_cart_back_to_shop', 'Back to shop (link in cart)');
-define('_JSHOP_OC_cart_back_to_shop_INFO', 'product / list / shop');
+define('_JSHOP_OC_cart_back_to_shop_product', 'Product');
+define('_JSHOP_OC_cart_back_to_shop_list', 'List products');
+define('_JSHOP_OC_cart_back_to_shop_shop', 'Shop');
 define('_JSHOP_OC_product_button_back_use_end_list', 'Product button back (use end list)');
 define('_JSHOP_OC_display_tax_id_in_pdf', 'Display tax ID in PDF');
 define('_JSHOP_OC_image_quality', 'Image quality');
 define('_JSHOP_OC_image_fill_color', 'Image fill color');
 define('_JSHOP_OC_product_price_qty_discount', 'Product price qty discount');
-define('_JSHOP_OC_product_price_qty_discount_INFO', '1 - price, 2 - percent');
+define('_JSHOP_OC_product_price_qty_discount_price', 'Price');
+define('_JSHOP_OC_product_price_qty_discount_percent', 'Percent');
 define('_JSHOP_OC_rating_starparts', 'Rating star parts');
 define('_JSHOP_OC_rating_starparts_INFO', 'star is divided to {2} part');
 define('_JSHOP_OC_show_list_price_shipping_weight', 'Show list price shipping weight');
@@ -931,7 +934,9 @@ define('_JSHOP_OC_product_price_precision', 'Product price precision');
 define('_JSHOP_OC_cart_decimal_qty_precision', 'Cart decimal qty precision');
 define('_JSHOP_OC_default_frontend_currency', 'Default frontend currency ID');
 define('_JSHOP_OC_product_file_upload_via_ftp', 'Product file upload (via ftp)');
-define('_JSHOP_OC_product_file_upload_via_ftp_INFO', '0 - upload file, 1- set name file, 2- {0,1}');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file', 'Upload file');
+define('_JSHOP_OC_product_file_upload_via_ftp_set_name_file', 'Set name file');
+define('_JSHOP_OC_product_file_upload_via_ftp_upload_file_or_set_name_file', 'Upload file or set name file');
 define('_JSHOP_OC_product_file_upload_count', 'Product file upload count');
 define('_JSHOP_OC_product_image_upload_count', 'Product image upload count');
 define('_JSHOP_OC_product_video_upload_count', 'Product video upload count');

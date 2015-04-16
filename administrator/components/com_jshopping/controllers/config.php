@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.1 20.07.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -243,12 +243,12 @@ class JshoppingControllerConfig extends JController{
         $vendor->loadMain();
     	$_countries = JSFactory::getModel("countries");
 		$countries = $_countries->getAllCountries(0);	
-	    $first = JHTML::_('select.option', 0,_JSHOP_SELECT,'country_id','name' );
+	    $first = JHTML::_('select.option', 0, _JSHOP_SELECT, 'country_id', 'name' );
 		array_unshift($countries, $first);
 		$lists['countries'] = JHTML::_('select.genericlist', $countries, 'country', 'class = "inputbox"', 'country_id', 'name', $vendor->country);
         
         $nofilter = array();
-        JFilterOutput::objectHTMLSafe( $vendor, ENT_QUOTES, $nofilter);
+        JFilterOutput::objectHTMLSafe($vendor, ENT_QUOTES, $nofilter);
         
     	$view=$this->getView("config", 'html');
         $view->setLayout("storeinfo");
@@ -278,6 +278,19 @@ class JshoppingControllerConfig extends JController{
 			}	
 		}
         
+		if ($tab == 3){
+            $result = array();
+            if ($jshopConfig->other_config!=''){
+                $result = unserialize($jshopConfig->other_config);
+            }
+            $config = new stdClass();
+            include($jshopConfig->path.'lib/default_config.php');
+            foreach($image_other_config as $k){
+                $result[$k] = $post[$k];
+            }
+            $post['other_config'] = serialize($result);
+        }
+		
         if ($tab == 5){
             $vendor = JSFactory::getTable('vendor', 'jshop');
             $post = JRequest::get("post");
@@ -682,6 +695,7 @@ class JshoppingControllerConfig extends JController{
 		$view->setLayout("otherconfig");
         $view->assign("other_config", $other_config);
         $view->assign("other_config_checkbox", $other_config_checkbox);
+		$view->assign("other_config_select", $other_config_select);
         $view->assign("config", $jshopConfig);
 		$view->assign("lists", $lists);
 		

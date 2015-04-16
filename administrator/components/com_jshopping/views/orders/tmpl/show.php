@@ -121,7 +121,7 @@
           <?php foreach($order_history as $history){?>
             <tr>
               <td>
-                <?php echo $history->status_date_added?>
+                <?php echo formatdate($history->status_date_added, 1)?>
               </td>
               <td class="center">
                 <?php $notify_customer=($history->customer_notify) ? ('tick.png'): ('publish_x.png');?>

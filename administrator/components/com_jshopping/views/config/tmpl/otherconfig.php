@@ -37,11 +37,24 @@
 	</td>
 	<td>
         <?php if (in_array($k, $this->other_config_checkbox)){?>
-        <input type="hidden" name="<?php print $k?>" value="0">
-        <input type="checkbox" name="<?php print $k?>" value="1" <?php if ($jshopConfig->$k==1) print 'checked'?>>
+			<input type="hidden" name="<?php print $k?>" value="0">
+			<input type="checkbox" name="<?php print $k?>" value="1" <?php if ($jshopConfig->$k==1) print 'checked'?>>
+		<?php }elseif (isset($this->other_config_select[$k])){?>
+            <?php 
+            $option = array();
+            foreach($this->other_config_select[$k] as $k2=>$v2){
+                $option_name = $v2;
+                if (defined("_JSHOP_OC_".$k."_".$v2)){
+                    $option_name = constant("_JSHOP_OC_".$k."_".$v2);
+                }
+                $option[] = JHTML::_('select.option', $k2, $option_name, 'id', 'name');
+            }
+            print JHTML::_('select.genericlist', $option, $k, 'class = "inputbox"', 'id', 'name', $jshopConfig->$k);
+            ?>
         <?php }else{?>
-		<input type="text" name="<?php print $k?>" value="<?php echo $jshopConfig->$k?>">
+			<input type="text" name="<?php print $k?>" value="<?php echo $jshopConfig->$k?>">
         <?php }?>
+		
 		<?php if (defined("_JSHOP_OC_".$k."_INFO")) echo JHTML::tooltip(constant("_JSHOP_OC_".$k."_INFO"));?>
 	</td>
 </tr>

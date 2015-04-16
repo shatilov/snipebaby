@@ -103,7 +103,7 @@
     <?php echo formatprice($row->product_price, sprintCurrency($row->currency_id));?>
    </td>
    <td>
-	<?php echo $row->product_date_added;?>
+	<?php echo formatdate($row->product_date_added, 1);?>
    </td>
    <td align="center">
 	 <?php echo $published = ($row->product_publish) ? ('<img title = "'._JSHOP_PUBLISH.'" border="0" alt="" src="components/com_jshopping/images/tick.png">') : ('<img title = "'._JSHOP_UNPUBLISH.'" border="0" alt="" src="components/com_jshopping/images/publish_x.png">');?>

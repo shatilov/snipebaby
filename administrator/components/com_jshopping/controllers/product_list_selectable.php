@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.14.4 02.03.2012
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -45,7 +45,7 @@ class JShoppingControllerProduct_List_Selectable extends JController {
 
         $parentTop = new stdClass();
 		$parentTop->category_id = 0;
-		$parentTop->name = " - - - ";
+		$parentTop->name = " - "._JSHOP_CATEGORY." - ";
 		$categories_select = buildTreeCategory(0,1,0);
 		array_unshift($categories_select, $parentTop);
 		$lists['treecategories'] = JHTML::_('select.genericlist', $categories_select, 'category_id', 'onchange="document.adminForm.submit();"', 'category_id', 'name', $category_id);
@@ -53,7 +53,7 @@ class JShoppingControllerProduct_List_Selectable extends JController {
 		$manuf1 = array();
         $manuf1[0] = new stdClass();
 		$manuf1[0]->manufacturer_id = '0';
-		$manuf1[0]->name = " - - - ";
+		$manuf1[0]->name = " - "._JSHOP_NAME_MANUFACTURER." - ";
 		$manufs = JSFactory::getModel('Manufacturers', 'JShoppingModel')->getList();
 		$manufs = array_merge($manuf1, $manufs);
 		$lists['manufacturers'] = JHTML::_('select.genericlist', $manufs, 'manufacturer_id', 'onchange="document.adminForm.submit();"', 'manufacturer_id', 'name', $manufacturer_id);
@@ -61,12 +61,12 @@ class JShoppingControllerProduct_List_Selectable extends JController {
 		if ($jshopConfig->admin_show_product_labels) {
 			$alllabels = JSFactory::getModel('ProductLabels', 'JShoppingModel')->getList();
 			$first = array();
-			$first[] = JHTML::_('select.option', '0'," - - - ", 'id','name');        
+			$first[] = JHTML::_('select.option', '0', " - "._JSHOP_LABEL." - ", 'id','name');        
 			$lists['labels'] = JHTML::_('select.genericlist', array_merge($first, $alllabels), 'label_id', 'onchange="document.adminForm.submit();"','id','name', $label_id);
 		}
 
 		$f_option = array();
-		$f_option[] = JHTML::_('select.option', 0, " - - - ", 'id', 'name');
+		$f_option[] = JHTML::_('select.option', 0, " - "._JSHOP_SHOW." - ", 'id', 'name');
 		$f_option[] = JHTML::_('select.option', 1, _JSHOP_PUBLISH, 'id', 'name');
 		$f_option[] = JHTML::_('select.option', 2, _JSHOP_UNPUBLISH, 'id', 'name');
 		$lists['publish'] = JHTML::_('select.genericlist', $f_option, 'publish', 'onchange="document.adminForm.submit();"', 'id', 'name', $publish);

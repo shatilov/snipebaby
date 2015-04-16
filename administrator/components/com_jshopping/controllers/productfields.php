@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.18.6 03.01.2013
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -64,7 +64,7 @@ class JshoppingControllerProductFields extends JController{
         $_productfieldgroups = JSFactory::getModel("productFieldGroups");
         $groups = $_productfieldgroups->getList();
         $groups0 = array();
-        $groups0[] = JHTML::_('select.option', 0, "- - -", 'id', 'name');        
+        $groups0[] = JHTML::_('select.option', 0, "- "._JSHOP_GROUP." -", 'id', 'name');
         $lists['group'] = JHTML::_('select.genericlist', array_merge($groups0, $groups),'group','onchange="document.adminForm.submit();"','id','name', $group);
         
         $types = array(_JSHOP_LIST, _JSHOP_TEXT);

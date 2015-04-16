@@ -89,14 +89,6 @@
        <?php echo $lists['countries'];?>
      </td>
     </tr>
-    <tr>
-     <td  class="key">
-       <?php echo _JSHOP_STORE_DATE_FORMAT;?>
-     </td>
-     <td>
-       <input size="55" type = "text" class = "inputbox" name = "store_date_format" value = "<?php echo $jshopConfig->store_date_format?>" />
-     </td>
-    </tr>
     </table>
 </fieldset>
 </div>
@@ -348,7 +340,7 @@
     <td></td>
     <td >
         <?php print _JSHOP_PDF_PREVIEW_INFO1;?>
-        <a target = "_blank" href = "index.php?option=com_jshopping&controller=config&task=preview_pdf"><?php echo _JSHOP_PDF_PREVIEW?></a>
+        <a target = "_blank" href = "index.php?option=com_jshopping&controller=config&task=preview_pdf&config_id=<?php echo $jshopConfig->id?>"><?php echo _JSHOP_PDF_PREVIEW?></a>
     </td>
     </tr>
     </table>
