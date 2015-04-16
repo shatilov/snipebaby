@@ -387,3 +387,4 @@ class FinderCli extends JApplicationCli
 // Instantiate the application object, passing the class name to JCli::getInstance
 // and use chaining to execute the application.
 JApplicationCli::getInstance('FinderCli')->execute();
+
