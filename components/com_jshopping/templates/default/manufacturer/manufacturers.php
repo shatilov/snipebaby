@@ -3,7 +3,9 @@
 <div class="shophead<?php print $this->params->get('pageclass_sfx');?>"><h1><?php print $this->params->get('page_heading')?></h1></div>
 <?php }?>
 <div class="jshop" id="comjshop">
-<?php print $this->manufacturer->description?>
+<div class="manufacturer_description">
+    <?php print $this->manufacturer->description?>
+</div>
 
 <?php if (count($this->rows)){?>
 <div class="jshop_list_manufacturer">

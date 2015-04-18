@@ -1,7 +1,10 @@
 <?php defined('_JEXEC') or die(); ?>
 <div class="jshop" id="comjshop">
 <h1><?php print $this->category->name?></h1>
-<?php print $this->category->description?>
+
+<div class="category_description">
+    <?php print $this->category->description?>
+</div>
 
 <div class="jshop_list_category">
 <?php if (count($this->categories)){ ?>

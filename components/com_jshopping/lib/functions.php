@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.19.0 01.09.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -171,6 +171,7 @@ function formatprice($price, $currency_code = null, $currency_exchange = 0, $sty
     $price = number_format($price, $jshopConfig->decimal_count, $jshopConfig->decimal_symbol, $jshopConfig->thousand_separator);
     if ($style_currency==1) $currency_code = '<span class="currencycode">'.$currency_code.'</span>';
 	$return = str_replace("Symb", $currency_code, str_replace("00", $price, $jshopConfig->format_currency[$jshopConfig->currency_format]));
+	extract(js_add_trigger(get_defined_vars(), "after"));
     return $return;
 }
 
@@ -660,7 +661,7 @@ static $listLabels;
         return $obj->name;
 }
 
-function getPriceFromCurrency($price, $currency_id = 0){
+function getPriceFromCurrency($price, $currency_id = 0, $current_currency_value = 0){
     $jshopConfig = JSFactory::getConfig();
     if ($currency_id){
         $all_currency = JSFactory::getAllCurrency();
@@ -669,6 +670,9 @@ function getPriceFromCurrency($price, $currency_id = 0){
         $pricemaincurrency = $price / $value;
     }else{
         $pricemaincurrency = $price;
+    }
+	if (!$current_currency_value){
+        $current_currency_value = $jshopConfig->currency_value;
     }
 return $pricemaincurrency * $jshopConfig->currency_value;
 }

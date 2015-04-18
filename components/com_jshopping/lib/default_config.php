@@ -54,14 +54,65 @@ $config->display_updates_version = 1;
 $config->noimage = 'noimage.gif';
 $config->shippinginfourl = 'index.php?option=com_jshopping&controller=content&task=view&page=shipping';
 
-$config->user_field_client_type = array(0=>_JSHOP_REG_SELECT, 1=>_JSHOP_PRIVAT_CLIENT, 2=>_JSHOP_FIRMA_CLIENT);
-$config->user_field_title = array(0=>_JSHOP_REG_SELECT, 1=>_JSHOP_MR, 2=>_JSHOP_MS);
-$config->sorting_products_field_select =   array(1 => 'name',         2=>'prod.product_price',        3=>'prod.product_date_added', 5=>'prod.average_rating', 6=>'prod.hits',         4=>'pr_cat.product_ordering');
-$config->sorting_products_name_select =    array(1=>_JSHOP_SORT_ALPH, 2=>_JSHOP_SORT_PRICE,           3=>_JSHOP_SORT_DATE,          5=>_JSHOP_SORT_RATING,    6=>_JSHOP_SORT_POPULAR, 4=>_JSHOP_SORT_MANUAL);
-$config->sorting_products_field_s_select = array(1 => 'name',         2=>'prod.product_price',        3=>'prod.product_date_added', 5=>'prod.average_rating', 6=>'prod.hits');
-$config->sorting_products_name_s_select =  array(1=>_JSHOP_SORT_ALPH, 2=>_JSHOP_SORT_PRICE,           3=>_JSHOP_SORT_DATE,          5=>_JSHOP_SORT_RATING,    6=>_JSHOP_SORT_POPULAR);
-$config->format_currency = array('1' => '00Symb', '00 Symb', 'Symb00', 'Symb 00');
-$config->count_product_select = array('5'=>5, '10' => 10, '15' => 15, '20' => 20, '25' => 25, '50' => 50, '99999'=>_JSHOP_ALL);
+$config->user_field_client_type = array(
+    0=>_JSHOP_REG_SELECT,
+    1=>_JSHOP_PRIVAT_CLIENT,
+    2=>_JSHOP_FIRMA_CLIENT
+);
+$config->user_field_title = array(
+    0=>_JSHOP_REG_SELECT,
+    1=>_JSHOP_MR,
+    2=>_JSHOP_MS
+);
+    
+$config->sorting_products_field_select = array(
+    1=>'name',
+    2=>'prod.product_price',        
+    3=>'prod.product_date_added', 
+    5=>'prod.average_rating', 
+    6=>'prod.hits',         
+    4=>'pr_cat.product_ordering'
+);
+$config->sorting_products_name_select = array(
+    1=>_JSHOP_SORT_ALPH,  
+    2=>_JSHOP_SORT_PRICE,           
+    3=>_JSHOP_SORT_DATE,          
+    5=>_JSHOP_SORT_RATING,    
+    6=>_JSHOP_SORT_POPULAR, 
+    4=>_JSHOP_SORT_MANUAL
+);
+    
+$config->sorting_products_field_s_select = array(
+    1 => 'name',         
+    2=>'prod.product_price',        
+    3=>'prod.product_date_added', 
+    5=>'prod.average_rating', 
+    6=>'prod.hits'
+);
+$config->sorting_products_name_s_select = array(
+    1=>_JSHOP_SORT_ALPH, 
+    2=>_JSHOP_SORT_PRICE,           
+    3=>_JSHOP_SORT_DATE,          
+    5=>_JSHOP_SORT_RATING,    
+    6=>_JSHOP_SORT_POPULAR
+);
+    
+$config->format_currency = array(
+    '1' => '00Symb', 
+    '00 Symb', 
+    'Symb00', 
+    'Symb 00'
+);
+$config->count_product_select = array(
+    '5'=>5, 
+    '10' => 10, 
+    '15' => 15, 
+    '20' => 20, 
+    '25' => 25, 
+    '50' => 50, 
+    '99999'=>_JSHOP_ALL
+);
+
 $config->payment_status_enable_download_sale_file = array(5, 6, 7);
 $config->payment_status_return_product_in_stock = array(3, 4);
 $config->payment_status_for_cancel_client = 3;
@@ -147,17 +198,141 @@ $config->advert = 1;
 $config->hide_weight_in_cart_weight0 = 1;
 $config->hide_from_basic_price = 0;
 
-$config->product_search_fields = array('prod.ml:name', 'prod.ml:short_description', 'prod.ml:description', 'prod.product_ean');
+$config->product_search_fields = array(
+    'prod.ml:name',
+    'prod.ml:short_description',
+    'prod.ml:description',
+    'prod.product_ean'
+);
 $config->attribut_dep_sorting_in_product = "V.value_ordering";
 $config->attribut_nodep_sorting_in_product = "V.value_ordering";
 $config->new_extra_field_type = 'varchar(100)';
-$config->sys_static_text = array('home','manufacturer','agb','return_policy','order_email_descr','order_email_descr_end','order_finish_descr','shipping','privacy_statement','cart');
+$config->sys_static_text = array(
+    'home',
+    'manufacturer',
+    'agb',
+    'return_policy',
+    'order_email_descr',
+    'order_email_descr_end',
+    'order_finish_descr',
+    'shipping',
+    'privacy_statement',
+    'cart'
+);
 
-$other_config = array('tax_on_delivery_address',"cart_back_to_shop", "product_button_back_use_end_list", "display_tax_id_in_pdf", "image_quality", "image_fill_color", "product_price_qty_discount", "rating_starparts","show_list_price_shipping_weight", "product_price_precision", "cart_decimal_qty_precision", "default_frontend_currency", "product_file_upload_via_ftp", "product_file_upload_count", "product_image_upload_count", "product_video_upload_count", "show_insert_code_in_product_video", "max_number_download_sale_file", "max_day_download_sale_file", "order_display_new_digital_products", "display_user_groups_info", "display_user_group", "load_jquery", "load_jquery_version", "load_jquery_lightbox", "load_javascript", "load_css",'list_products_calc_basic_price_from_product_price','hide_from_basic_price','calc_basic_price_from_product_price','user_discount_not_apply_prod_old_price','advert');
-$other_config_checkbox = array('tax_on_delivery_address',"show_list_price_shipping_weight", "display_tax_id_in_pdf", "show_insert_code_in_product_video", "order_display_new_digital_products", "display_user_groups_info", "display_user_group", "load_jquery", "load_jquery_lightbox", "load_css", "load_javascript",'set_old_price_after_group_set_price','list_products_calc_basic_price_from_product_price','hide_from_basic_price','calc_basic_price_from_product_price','user_discount_not_apply_prod_old_price','advert');
-$adminfunction_other_config = array('tax','stock');
-$checkout_other_config = array('display_delivery_time_for_product_in_order_mail','show_delivery_date','show_delivery_time_checkout','show_manufacturer_in_cart','weight_in_invoice','shipping_in_invoice','payment_in_invoice','date_invoice_in_invoice','send_invoice_manually','display_agb','cart_basic_price_show','step_4_3','user_number_in_invoice','return_policy_for_product','no_return_all','show_return_policy_text_in_email_order','show_return_policy_text_in_pdf');
-$catprod_other_config = array('count_products_to_page_tophits','count_products_to_page_toprating','count_products_to_page_label','count_products_to_page_bestseller','count_products_to_page_random','count_products_to_page_last','count_products_to_row_tophits','count_products_to_row_toprating','count_products_to_row_label','count_products_to_row_bestseller','count_products_to_row_random','count_products_to_row_last','display_short_descr_multiline','count_manufacturer_to_row','attribut_dep_sorting_in_product','attribut_nodep_sorting_in_product');
+$other_config = array(
+    'tax_on_delivery_address',
+    "cart_back_to_shop",
+    "product_button_back_use_end_list",
+    "display_tax_id_in_pdf",
+    "product_price_qty_discount",
+    "rating_starparts",
+    "show_list_price_shipping_weight",
+    "product_price_precision",
+    "cart_decimal_qty_precision",
+    "default_frontend_currency",
+    "product_file_upload_via_ftp",
+    "product_file_upload_count",
+    "product_image_upload_count",
+    "product_video_upload_count",
+    "show_insert_code_in_product_video",
+    "max_number_download_sale_file",
+    "max_day_download_sale_file",
+    "order_display_new_digital_products",
+    "display_user_groups_info",
+    "display_user_group",
+    "load_jquery_lightbox",
+    "load_javascript",
+    "load_css",
+    'list_products_calc_basic_price_from_product_price',
+    'hide_from_basic_price','calc_basic_price_from_product_price',
+    'user_discount_not_apply_prod_old_price',
+    'advert'
+);
+
+$other_config_checkbox = array(
+    'tax_on_delivery_address',
+    'product_button_back_use_end_list',
+    "show_list_price_shipping_weight",
+    "display_tax_id_in_pdf",
+    "show_insert_code_in_product_video",
+    "order_display_new_digital_products",
+    "display_user_groups_info",
+    "display_user_group",
+    "load_jquery_lightbox",
+    "load_css",
+    "load_javascript",
+    'set_old_price_after_group_set_price',
+    'list_products_calc_basic_price_from_product_price',
+    'hide_from_basic_price',
+    'calc_basic_price_from_product_price',
+    'user_discount_not_apply_prod_old_price',
+    'advert'
+);
+$other_config_select = array(
+    'cart_back_to_shop'=>array(
+        'product'=>'product',
+        'list'=>'list',
+        'shop'=>'shop'
+    ),
+    'product_price_qty_discount'=>array(
+        '1'=>'price',
+        '2'=>'percent'
+    ),
+    'product_file_upload_via_ftp'=>array(
+        0=>'upload_file',
+        1=>'set_name_file',
+        2=>'upload_file_or_set_name_file'
+    )
+);
+$adminfunction_other_config = array(
+    'tax',
+    'stock'
+);
+
+$checkout_other_config = array(
+    'display_delivery_time_for_product_in_order_mail',
+    'show_delivery_date',
+    'show_delivery_time_checkout',
+    'show_manufacturer_in_cart',
+    'weight_in_invoice',
+    'shipping_in_invoice',
+    'payment_in_invoice',
+    'date_invoice_in_invoice',
+    'send_invoice_manually',
+    'display_agb',
+    'cart_basic_price_show',
+    'step_4_3',
+    'user_number_in_invoice',
+    'return_policy_for_product',
+    'no_return_all',
+    'show_return_policy_text_in_email_order',
+    'show_return_policy_text_in_pdf'
+);
+
+$catprod_other_config = array(
+    'count_products_to_page_tophits',
+    'count_products_to_page_toprating',
+    'count_products_to_page_label',
+    'count_products_to_page_bestseller',
+    'count_products_to_page_random',
+    'count_products_to_page_last',
+    'count_products_to_row_tophits',
+    'count_products_to_row_toprating',
+    'count_products_to_row_label',
+    'count_products_to_row_bestseller',
+    'count_products_to_row_random',
+    'count_products_to_row_last',
+    'display_short_descr_multiline',
+    'count_manufacturer_to_row',
+    'attribut_dep_sorting_in_product',
+    'attribut_nodep_sorting_in_product'
+);
+
+$image_other_config = array(
+    "image_quality",
+    "image_fill_color"
+);
 
 $fields_client_sys = array();
 $fields_client_sys['register'][] = "email";

@@ -75,6 +75,7 @@
     </div>
   <?php }?>
   <br/>
+  <div class="cartdescr"><?php print $this->checkoutcartdescr;?></div>
   
   <table class = "jshop jshop_subtotal">
   <?php if (!$this->hide_subtotal){?>

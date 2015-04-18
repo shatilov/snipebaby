@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.19.0 10.08.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -142,7 +142,11 @@ class JshoppingControllerSearch extends JController{
         $order = $mainframe->getUserStateFromRequest($context.'order', 'order', $jshopConfig->product_sorting, 'int');
         $limit = $mainframe->getUserStateFromRequest($context.'limit', 'limit', $jshopConfig->count_products_to_page, 'int');
         if (!$limit) $limit = $jshopConfig->count_products_to_page;
-        $limitstart = JRequest::getInt('limitstart',0);
+        $limitstart = JRequest::getInt('limitstart', 0);
+		if ($order==4){
+            $order = 1;
+        }
+		
         if ($jshopConfig->admin_show_product_extra_field){
             $extra_fields = $post['extra_fields'];
             $extra_fields = filterAllowValue($extra_fields, "array_int_k_v+");

@@ -8,7 +8,7 @@ include(dirname(__FILE__)."/register.js.php");
     <h1><?php print _JSHOP_REGISTRATION;?></h1>
     <?php } ?>
     
-    <form action = "<?php print SEFLink('index.php?option=com_jshopping&controller=user&task=registersave',1,0, $this->config->use_ssl)?>" method = "post" name = "loginForm" onsubmit = "return validateRegistrationForm('<?php print $this->urlcheckdata?>', this.name)" autocomplete="off">
+    <form action = "<?php print SEFLink('index.php?option=com_jshopping&controller=user&task=registersave',1,0, $this->config->use_ssl)?>" method = "post" name = "loginForm" onsubmit = "return validateRegistrationForm('<?php print $this->urlcheckdata?>', this.name)" autocomplete="off" enctype="multipart/form-data">
     <?php echo $this->_tmpl_register_html_1?>
     <div class = "jshop_register" style="padding-top:0px;">
       <table>

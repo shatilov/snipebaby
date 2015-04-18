@@ -1,7 +1,9 @@
 <?php defined('_JEXEC') or die(); ?>
 <div class="jshop" id="comjshop">
 <h1><?php print $this->manufacturer->name?></h1>
-<?php print $this->manufacturer->description;?>
+<div class="manufacturer_description">
+    <?php print $this->manufacturer->description;?>
+</div>
 
 <?php if ($this->display_list_products){ ?>
 <div class="jshop_list_product">

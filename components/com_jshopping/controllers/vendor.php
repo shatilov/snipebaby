@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.19.0 28.09.2013
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -148,7 +148,10 @@ class JshoppingControllerVendor extends JController{
         $limit = $mainframe->getUserStateFromRequest( $context.'limit', 'limit', $products_page, 'int');
         if (!$limit) $limit = $products_page;
         $limitstart = JRequest::getInt('limitstart');
-
+		if ($order==4){
+            $order = 1;
+        }
+		
         $orderbyq = getQuerySortDirection($order, $orderby);
         $image_sort_dir = getImgSortDirection($order, $orderby);
         $field_order = $jshopConfig->sorting_products_field_s_select[$order];

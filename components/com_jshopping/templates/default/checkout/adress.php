@@ -8,7 +8,7 @@
 $config_fields = $this->config_fields;
 include(dirname(__FILE__)."/adress.js.php");
 ?>
-<form action = "<?php print $this->action ?>" method = "post" name = "loginForm" onsubmit = "return validateCheckoutAdressForm('<?php print $this->live_path ?>', this.name)" >
+<form action = "<?php print $this->action ?>" method = "post" name = "loginForm" onsubmit = "return validateCheckoutAdressForm('<?php print $this->live_path ?>', this.name)" autocomplete="off" enctype="multipart/form-data">
     <?php print $this->_tmp_ext_html_address_start?>
     <div class = "jshop_register">
     <table>

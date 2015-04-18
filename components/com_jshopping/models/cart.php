@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 20.10.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -638,7 +638,7 @@ class jshopCart{
         if ($quantity <= 0){
             $errors['100'] = 'Error quantity';
             if ($displayErrorMessage){
-                JError::raiseNotice('', $errors['100']);
+                JError::raiseNotice(100, $errors['100']);
             }
             return 0;
         }
@@ -659,7 +659,7 @@ class jshopCart{
         if ( (count($product->getRequireAttribute()) > count($attr_id)) || in_array(0, $attr_id)){
             $errors['101'] = _JSHOP_SELECT_PRODUCT_OPTIONS;
             if ($displayErrorMessage){
-                JError::raiseNotice('', $errors['101']);
+                JError::raiseNotice(101, $errors['101']);
             }
             return 0;
         }
@@ -673,7 +673,7 @@ class jshopCart{
                     $error = 1;
                     $errors['102_'.$v->id] = sprintf(_JSHOP_PLEASE_ENTER_X, $v->name);
                     if ($displayErrorMessage){
-                        JError::raiseNotice('', $errors['102_'.$v->id]);
+                        JError::raiseNotice(102, $errors['102_'.$v->id]);
                     }
                 }
             }
@@ -706,14 +706,14 @@ class jshopCart{
                 if ($jshopConfig->max_count_order_one_product && $sum_quantity > $jshopConfig->max_count_order_one_product){
                     $errors['103'] = sprintf(_JSHOP_ERROR_MAX_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->max_count_order_one_product);
                     if ($displayErrorMessage){
-                        JError::raiseNotice('', $errors['103']);
+                        JError::raiseNotice(103, $errors['103']);
                     }
                     return 0;
                 }
                 if ($jshopConfig->min_count_order_one_product && $sum_quantity < $jshopConfig->min_count_order_one_product){
                     $errors['104'] = sprintf(_JSHOP_ERROR_MIN_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->min_count_order_one_product);
                     if ($displayErrorMessage){
-                        JError::raiseNotice('', $errors['104']);
+                        JError::raiseNotice(104, $errors['104']);
                     }
                     return 0;
                 }
@@ -722,7 +722,7 @@ class jshopCart{
                     if ($balans < 0) $balans = 0;
                     $errors['105'] = sprintf(_JSHOP_ERROR_EXIST_QTY_PRODUCT_IN_CART, $this->products[$key]['quantity'], $balans);
                     if ($displayErrorMessage){
-                        JError::raiseWarning('', $errors['105']);
+                        JError::raiseWarning(105, $errors['105']);
                     }
                     return 0;
                 }
@@ -755,14 +755,14 @@ class jshopCart{
             if ($jshopConfig->max_count_order_one_product && $sum_quantity > $jshopConfig->max_count_order_one_product){
                 $errors['106'] = sprintf(_JSHOP_ERROR_MAX_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->max_count_order_one_product);
                 if ($displayErrorMessage){
-                    JError::raiseNotice('', $errors['106']);
+                    JError::raiseNotice(106, $errors['106']);
                 }
                 return 0;
             }
             if ($jshopConfig->min_count_order_one_product && $sum_quantity < $jshopConfig->min_count_order_one_product){
                 $errors['107'] = sprintf(_JSHOP_ERROR_MIN_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->min_count_order_one_product);
                 if ($displayErrorMessage){
-                    JError::raiseNotice('', $errors['107']);
+                    JError::raiseNotice(107, $errors['107']);
                 }
                 return 0;
             }
@@ -771,7 +771,7 @@ class jshopCart{
                 if ($balans < 0) $balans = 0;
                 $errors['108'] = sprintf(_JSHOP_ERROR_EXIST_QTY_PRODUCT, $balans);
                 if ($displayErrorMessage){
-                    JError::raiseWarning('', $errors['108']);
+                    JError::raiseWarning(108, $errors['108']);
                 }
                 return 0;
             }
@@ -887,15 +887,15 @@ class jshopCart{
                 }
                 
                 if ($jshopConfig->max_count_order_one_product && ($checkqty > $jshopConfig->max_count_order_one_product)){
-                    JError::raiseNotice('', sprintf(_JSHOP_ERROR_MAX_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->max_count_order_one_product));
+                    JError::raiseNotice(111, sprintf(_JSHOP_ERROR_MAX_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->max_count_order_one_product));
                     return 0;
                 }
                 if ($jshopConfig->min_count_order_one_product && ($checkqty < $jshopConfig->min_count_order_one_product)){
-                    JError::raiseNotice('', sprintf(_JSHOP_ERROR_MIN_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->min_count_order_one_product));
+                    JError::raiseNotice(112, sprintf(_JSHOP_ERROR_MIN_COUNT_ORDER_ONE_PRODUCT, $jshopConfig->min_count_order_one_product));
                     return 0;
                 }
                 if (!$product->unlimited && $jshopConfig->controler_buy_qty && ($checkqty > $qtyInStock)){
-                    JError::raiseWarning('', sprintf(_JSHOP_ERROR_EXIST_QTY_PRODUCT_BASKET, $product->$name, $qtyInStock));
+                    JError::raiseWarning(113, sprintf(_JSHOP_ERROR_EXIST_QTY_PRODUCT_BASKET, $product->$name, $qtyInStock));
                     continue;
                 }
    

@@ -22,13 +22,16 @@
                      <b><?php print _JSHOP_ORDER_DATE ?>:</b> <?php print formatdate($order->order_date, 0) ?><br />
                      <b><?php print _JSHOP_EMAIL_BILL_TO ?>:</b> <?php print $order->f_name ?> <?php print $order->l_name ?><br />
                      <b><?php print _JSHOP_EMAIL_SHIP_TO ?>:</b> <?php print $order->d_f_name ?> <?php print $order->d_l_name ?><br />
+					 <?php print $this->_tmp_ext_user_info;?>
                    </td>
                    <td width = "30%">
                      <b><?php print _JSHOP_PRODUCTS ?>:</b> <?php print $order->count_products ?><br />
                      <b></b> <?php print formatprice($order->order_total, $order->currency_code)?><?php print $order->_ext_price_html?><br />
+					 <?php print $this->_tmp_ext_prod_info;?>
                    </td>
                    <td width = "20%" style="vertical-align:middle;text-align:right;padding-right:10px;">
                      <a href = "<?php print $order->order_href ?>"><?php print _JSHOP_DETAILS?></a> 
+					 <?php print $this->_tmp_ext_but_info;?>
                    </td>
                  </tr>
                </table>

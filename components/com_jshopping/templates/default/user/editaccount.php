@@ -7,7 +7,7 @@ include(dirname(__FILE__)."/editaccount.js.php");
 
     <h1><?php print _JSHOP_EDIT_DATA ?></h1>
     
-    <form action = "<?php print $this->action ?>" method = "post" name = "loginForm" onsubmit = "return validateEditAccountForm('<?php print $this->live_path ?>', this.name)">
+    <form action = "<?php print $this->action ?>" method = "post" name = "loginForm" onsubmit = "return validateEditAccountForm('<?php print $this->live_path ?>', this.name)" enctype="multipart/form-data">
     <?php echo $this->_tmpl_editaccount_html_1?>
     <div class = "jshop_register">
     <table>

@@ -59,7 +59,7 @@
 <br />
 <br />
 
-<form name = "form_finish" action = "<?php print $this->action ?>" method = "post">
+<form name = "form_finish" action = "<?php print $this->action ?>" method = "post" enctype="multipart/form-data">
    <table class = "jshop" align="center" style="width:auto;margin-left:auto;margin-right:auto;">
      <tr>
        <td>

@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.1 14.11.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -138,7 +138,7 @@ class JSFactory{
             $userguest = new jshopUserGust();
             $userguest->load();
             $userguest->percent_discount = 0;
-            JDispatcher::getInstance()->trigger('onAfterGetUserShopGuestJSFactory', array(&$usershop));
+            JDispatcher::getInstance()->trigger('onAfterGetUserShopGuestJSFactory', array(&$userguest));
         }
     return $userguest;
     }

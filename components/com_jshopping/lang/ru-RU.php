@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.20.0 22.01.2012
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -305,7 +305,7 @@ define('_JSHOP_DOWNLOAD_DEMO', 'Скачать демо');
 define('_JSHOP_DOWNLOAD', 'Скачать');
 define('_JSHOP_FOR_DOWNLOAD_ORDER_MUST_BE_PAID', 'Заказ должен быть оплачен');
 define('_JSHOP_NUMBER_DOWNLOADS_FILE_RESTRICTED', 'Количество загрузок файла ограничено');
-define('_JSHOP_TIME_DOWNLOADS_FILE_RESTRICTED', 'Время загрузоки файла ограничено');
+define('_JSHOP_TIME_DOWNLOADS_FILE_RESTRICTED', 'Время загрузки файла ограничено');
 
 // No price
 define('_JSHOP_NO_PRICE', 'Нет цены');  

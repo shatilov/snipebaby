@@ -1,6 +1,8 @@
 <?php defined('_JEXEC') or die(); ?>
 <div class="jshop" id="comjshop">
     <h1><?php print _JSHOP_USER_GROUPS_INFO?></h1>
+	
+	<?php echo $this->_tmpl_start?>
     
     <table class="groups_list">
     <tr>
@@ -14,4 +16,7 @@
     </tr>
     <?php }?>
     </table>
+	
+	<?php echo $this->_tmpl_end?>
+	
 </div>

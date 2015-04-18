@@ -1,6 +1,6 @@
 <?php
 /**
-* @version      3.19.0 21.04.2014
+* @version      3.20.2 17.02.2015
 * @author       MAXXmarketing GmbH
 * @package      Jshopping
 * @copyright    Copyright (C) 2010 webdesigner-profi.de. All rights reserved.
@@ -96,12 +96,15 @@ class JshoppingControllerManufacturer extends JController{
 				
 		$context = "jshoping.manufacturlist.front.product";
         $contextfilter = "jshoping.list.front.product.manf.".$manufacturer_id;
-        $orderby = $mainframe->getUserStateFromRequest( $context.'orderby', 'orderby', $jshopConfig->product_sorting_direction, 'int');
-        $order = $mainframe->getUserStateFromRequest( $context.'order', 'order', $jshopConfig->product_sorting, 'int');
-        $limit = $mainframe->getUserStateFromRequest( $context.'limit', 'limit', $manufacturer->products_page, 'int');
+        $orderby = $mainframe->getUserStateFromRequest($context.'orderby', 'orderby', $jshopConfig->product_sorting_direction, 'int');
+        $order = $mainframe->getUserStateFromRequest($context.'order', 'order', $jshopConfig->product_sorting, 'int');
+        $limit = $mainframe->getUserStateFromRequest($context.'limit', 'limit', $manufacturer->products_page, 'int');
         if (!$limit) $limit = $manufacturer->products_page;
         $limitstart = JRequest::getInt('limitstart');
-
+		if ($order==4){
+            $order = 1;
+        }
+		
         $orderbyq = getQuerySortDirection($order, $orderby);
         $image_sort_dir = getImgSortDirection($order, $orderby);
         $field_order = $jshopConfig->sorting_products_field_s_select[$order];

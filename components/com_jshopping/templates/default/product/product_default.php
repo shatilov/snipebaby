@@ -97,6 +97,8 @@
     </div>
     <?php }?>
 
+	<?php print $this->_tmp_product_html_before_atributes;?>
+	
     <?php if (count($this->attributes)){?>
     <div class="jshop_prod_attributes">
         <table class="jshop">
@@ -122,6 +124,8 @@
         </table>
     </div>
     <?php }?>
+	
+	<?php print $this->_tmp_product_html_after_atributes;?>
     
     <?php if (count($this->product->freeattributes)){?>
     <div class="prod_free_attribs">
@@ -138,6 +142,8 @@
         <?php }?>
     </div>
     <?php }?>
+	
+	<?php print $this->_tmp_product_html_after_freeatributes;?>
     
     <?php if ($this->product->product_is_add_price){?>
     <div class="price_prod_qty_list_head"><?php print _JSHOP_PRICE_FOR_QTY?></div>
@@ -170,7 +176,9 @@
     
     <?php if ($this->product->product_price_default > 0 && $this->config->product_list_show_price_default){?>
         <div class="default_price"><?php print _JSHOP_DEFAULT_PRICE?>: <span id="pricedefault"><?php print formatprice($this->product->product_price_default)?></span></div>
-    <?php }?>        
+    <?php }?>
+	
+	<?php print $this->_tmp_product_html_before_price;?>
     
     <?php if ($this->product->_display_price){?>
     <div class="prod_price">
@@ -195,6 +203,8 @@
     <?php if ($this->product->product_basic_price_show){?>
         <div class="prod_base_price"><?php print _JSHOP_BASIC_PRICE?>: <span id="block_basic_price"><?php print formatprice($this->product->product_basic_price_calculate)?></span> / <?php print $this->product->product_basic_price_unit_name;?></div>
     <?php }?>
+	
+	<?php print $this->product->_tmp_var_bottom_allprices;?>
     
     <?php if (is_array($this->product->extra_field)){?>
         <div class="extra_fields">
@@ -210,6 +220,8 @@
         <?php }?>
         </div>
     <?php }?>
+	
+	<?php print $this->_tmp_product_html_after_ef;?>
     
     <?php if ($this->product->vendor_info){?>
         <div class="vendorinfo">

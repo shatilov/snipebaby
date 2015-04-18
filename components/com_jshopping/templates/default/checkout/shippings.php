@@ -4,7 +4,7 @@
 <?php print $this->small_cart?>
 
 <div class="jshop">
-<form id = "shipping_form" name = "shipping_form" action = "<?php print $this->action ?>" method = "post" onsubmit = "return validateShippingMethods()">
+<form id = "shipping_form" name = "shipping_form" action = "<?php print $this->action ?>" method = "post" onsubmit = "return validateShippingMethods()" autocomplete="off" enctype="multipart/form-data">
 <?php print $this->_tmp_ext_html_shipping_start?>
 <table id = "table_shippings" cellspacing="0" cellpadding="0">
 <?php foreach($this->shipping_methods as $shipping){?>

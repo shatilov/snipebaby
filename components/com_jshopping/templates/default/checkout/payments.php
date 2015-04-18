@@ -11,7 +11,7 @@ var payment_type_check = {};
 </script>
 
 <div class="jshop">
-<form id = "payment_form" name = "payment_form" action = "<?php print $this->action ?>" method = "post">
+<form id = "payment_form" name = "payment_form" action = "<?php print $this->action ?>" method = "post" autocomplete="off" enctype="multipart/form-data">
 <?php print $this->_tmp_ext_html_payment_start?>
 <table id = "table_payments" cellspacing="0" cellpadding="0">
   <?php 

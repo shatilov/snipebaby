@@ -1,6 +1,8 @@
 <?php defined('_JEXEC') or die(); ?>
 <?php $order = $this->order;?>
-<div class="jshop">
+<div class="jshop myorderinfo">
+<?php print $this->_tmp_html_start;?>
+
 <?php if ($this->config->order_send_pdf_client){?>
 <div class="downlod_order_invoice">
     <a target="_blank" href="<?php print $this->config->pdf_orders_live_path."/".$order->pdf_file;?>"><?php print _JSHOP_DOWNLOAD_INVOICE?></a>
@@ -463,6 +465,8 @@
 </table>
 <?php } ?>
 
+<?php print $this->_tmp_html_after_comment;?>
+
 <table class = "jshop" style = "margin-top:15px">
 <tr>
   <td width = "100%">
@@ -486,7 +490,12 @@
 </tr>
 </table>
 <br/>
+
+<?php print $this->_tmp_html_after_history;?>
+
 <?php if ($this->allow_cancel){?>
     <a href="<?php print SEFLink('index.php?option=com_jshopping&controller=user&task=cancelorder&order_id='.$order->order_id)?>"><?php print _JSHOP_CANCEL_ORDER?></a>
 <?php }?>
+
+<?php print $this->_tmp_html_end;?>
 </div>
